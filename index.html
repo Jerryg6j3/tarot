@@ -1,0 +1,1002 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>塔羅講義・1909 原版偉特牌</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#f6f1e7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1c1a18" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="塔羅講義">
+<meta name="apple-mobile-web-app-status-bar-style" content="default"><style>
+:root{--bg:#f6f1e7;--paper:#fffdf8;--ink:#2b2622;--muted:#6f655b;--line:#e3d9c8;--accent:#9b3d2e;--accent2:#2f5d74;--tag:#efe5d3;--up:#2e6b45;--rev:#9b3d2e}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1a18;--paper:#262320;--ink:#ece6dc;--muted:#a99f93;--line:#3a352f;--accent:#e08a74;--accent2:#8cc0d8;--tag:#332e29;--up:#7cc596;--rev:#e08a74}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:56px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif}
+header.hero{padding:40px 16px 24px;text-align:center}
+header.hero h1{margin:0;font-family:"Songti TC","Noto Serif TC",serif;font-size:2rem;letter-spacing:.08em}
+header.hero p{margin:.4em 0 0;color:var(--muted)}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);display:flex;gap:4px;overflow-x:auto;padding:8px 12px;justify-content:center}
+nav a{flex:none;color:var(--ink);text-decoration:none;padding:4px 12px;border-radius:999px;font-size:.92rem;background:var(--tag)}
+nav a:hover{background:var(--accent);color:#fff}
+main{max-width:980px;margin:0 auto;padding:0 16px 48px}
+section{margin-top:40px}
+h2{font-family:"Songti TC","Noto Serif TC",serif;font-size:1.6rem;border-bottom:2px solid var(--accent);padding-bottom:6px;margin:0 0 12px}
+h2 small{font-size:.9rem;color:var(--muted);font-weight:normal;margin-left:6px}
+.lead{color:var(--muted)}
+.note{background:var(--paper);border-left:4px solid var(--accent2);padding:4px 16px;border-radius:6px}
+h3.grp{font-size:1rem;margin:20px 0 8px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:8px}
+.grid a{text-decoration:none;color:var(--ink);text-align:center;font-size:.78rem;line-height:1.3}
+.grid img{width:100%;height:auto;border-radius:4px;display:block;box-shadow:0 1px 3px rgba(0,0,0,.2);transition:transform .15s}
+.grid a:hover img{transform:translateY(-3px)}
+.draw{text-align:center;margin-top:20px}
+.draw button{font:inherit;background:var(--accent);color:#fff;border:0;border-radius:999px;padding:10px 24px;cursor:pointer}
+.card{display:grid;grid-template-columns:260px 1fr;gap:24px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px;margin:20px 0}
+.card figure{margin:0}
+.card figure img{width:100%;height:auto;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.25);position:sticky;top:64px;transition:transform .4s}
+.card.reversed figure img{transform:rotate(180deg)}
+.card.drawn{outline:3px solid var(--accent)}
+.drawnlabel{grid-column:1/-1;margin:0;background:var(--tag);padding:8px 12px;border-radius:8px;font-weight:600}
+.card h3{margin:0;font-size:1.45rem;font-family:"Songti TC","Noto Serif TC",serif}
+.card h3 .num{color:var(--accent);margin-right:4px}
+.card h3 .en{font-size:.95rem;color:var(--muted);font-weight:normal;font-family:Georgia,serif;margin-left:6px}
+.card h4{margin:18px 0 4px;font-size:.95rem;color:var(--accent2);letter-spacing:.05em}
+.card ul{margin:0;padding-left:1.2em}
+.card li{margin:4px 0}
+.card p{margin:4px 0}
+.tags{margin-top:6px}
+.tag{display:inline-block;background:var(--tag);border-radius:999px;padding:0 10px;margin:4px 6px 0 0;font-size:.85rem}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px}
+dt{font-weight:700;white-space:nowrap}
+dd{margin:0}
+dt.up{color:var(--up)} dt.rev{color:var(--rev)}
+.journey{margin-top:14px!important;font-size:.95rem;color:var(--muted)}
+details.waite{margin-top:16px;border:1px dashed var(--line);border-radius:8px;padding:6px 12px;font-size:.92rem}
+details.waite summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.waite dl{margin-top:8px}
+.diff{margin-top:8px!important;color:var(--muted)}
+a.top{display:inline-block;margin-top:14px;font-size:.85rem;color:var(--muted)}
+#journey > p{max-width:46em}
+.stage{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:20px 0}
+.stage h3{margin:0;font-family:"Songti TC","Noto Serif TC",serif;font-size:1.3rem;display:flex;align-items:center;gap:10px}
+.badge{font-family:Georgia,serif;font-size:.85rem;background:var(--accent);color:#fff;border-radius:999px;padding:2px 10px;flex:none}
+.stage .sub{color:var(--muted);margin:2px 0 12px;font-size:.92rem}
+.road{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin:8px 0 14px}
+.road a{text-decoration:none;color:var(--ink);text-align:center;font-size:.78rem;line-height:1.3}
+.road img,.depart-row img{width:100%;height:auto;border-radius:4px;display:block;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.road b{color:var(--accent);font-family:Georgia,serif;font-weight:normal}
+.depart-row{display:flex;gap:16px;align-items:center;margin-top:10px}
+.depart-row a{flex:none;width:84px}
+.depart-row p{margin:0}
+.arrow{font-size:1.6rem;color:var(--accent)}
+a.cl{color:var(--accent);font-weight:600;text-decoration:none;border-bottom:1px dotted var(--accent)}
+h3.jh{font-family:"Songti TC","Noto Serif TC",serif;font-size:1.2rem;margin:28px 0 6px}
+dl.use{grid-template-columns:1fr;gap:2px}
+dl.use dt{margin-top:10px;color:var(--accent2)}
+@media (max-width:680px){.road{gap:4px}.road span{font-size:.68rem}.stage{padding:14px}}
+footer{max-width:980px;margin:0 auto;padding:0 16px 60px;color:var(--muted);font-size:.9rem}
+footer h2{font-size:1.2rem}
+@media (max-width:680px){
+ .card{grid-template-columns:1fr;padding:16px;gap:12px}
+ .card figure{max-width:240px;margin:0 auto}
+ .card figure img{position:static}
+ header.hero h1{font-size:1.6rem}
+ nav{justify-content:flex-start}
+}
+</style></head><body>
+<header class="hero"><h1>塔羅講義</h1><p>1909 年原版偉特牌（Rider–Waite–Smith）・78 張圖文對照</p></header>
+<nav><a href="#intro">說明</a><a href="#overview">總覽</a><a href="#journey">愚者之旅</a><a href="#major">大阿爾克那</a><a href="#wands">權杖</a><a href="#cups">聖杯</a><a href="#swords">寶劍</a><a href="#pentacles">錢幣</a></nav>
+<main><section id="intro">
+<h2>怎麼使用這份講義</h2>
+<p>每張牌都分成幾個部分：</p>
+<ol>
+<li><b>讀圖重點</b>：只寫原版牌面上看得到的東西。解牌時先看圖，牌義常常就藏在圖裡。</li>
+<li><b>現代牌義</b>：目前主流塔羅書籍的常見讀法，分正位、逆位。這是主體。</li>
+<li><b>應用舉例</b>（大牌）：放在工作、感情、建議裡大概怎麼讀。這只是舉例，實際解牌要看問題和牌陣。</li>
+<li><b>Waite 原意</b>：可展開的補充欄。這是偉特牌設計者 A. E. Waite 在 1910 年《The Pictorial Key to the Tarot》中寫的占卜牌義（中譯），以及它和現代讀法的差異。</li>
+</ol>
+<div class="note">
+<p><b>關於 Waite 原意</b>：Waite 的占卜牌義大多是沿用 18、19 世紀法國占卜書的關鍵詞清單，常常互相矛盾，跟 Pamela Colman Smith 畫的圖也不一定對得上。Waite 自己在書中也說，大牌的占卜牌義「極其人為、武斷」。現代讀法大多是從圖像、以及 Waite 書中描寫圖像象徵的章節發展出來的，所以兩者有時差很多。</p>
+<p><b>關於宮廷牌</b>：Waite 時代會用宮廷牌代表特定外貌的人（例如「黑髮男子」「金髮女子」），現代讀法多半改讀成一種性格或狀態。</p>
+</div>
+</section><section id="overview"><h2>總覽 <small>點牌面跳到解說</small></h2><h3 class="grp">大阿爾克那</h3><div class="grid"><a href="#c0"><img src="thumbs/00.jpg" width="132" height="229" alt=""><span>愚者</span></a><a href="#c1"><img src="thumbs/01.jpg" width="132" height="222" alt=""><span>魔術師</span></a><a href="#c2"><img src="thumbs/02.jpg" width="132" height="234" alt=""><span>女祭司</span></a><a href="#c3"><img src="thumbs/03.jpg" width="132" height="223" alt=""><span>皇后</span></a><a href="#c4"><img src="thumbs/04.jpg" width="132" height="229" alt=""><span>皇帝</span></a><a href="#c5"><img src="thumbs/05.jpg" width="132" height="225" alt=""><span>教皇</span></a><a href="#c6"><img src="thumbs/06.jpg" width="132" height="232" alt=""><span>戀人</span></a><a href="#c7"><img src="thumbs/07.jpg" width="132" height="227" alt=""><span>戰車</span></a><a href="#c8"><img src="thumbs/08.jpg" width="132" height="228" alt=""><span>力量</span></a><a href="#c9"><img src="thumbs/09.jpg" width="132" height="223" alt=""><span>隱者</span></a><a href="#c10"><img src="thumbs/10.jpg" width="132" height="233" alt=""><span>命運之輪</span></a><a href="#c11"><img src="thumbs/11.jpg" width="132" height="230" alt=""><span>正義</span></a><a href="#c12"><img src="thumbs/12.jpg" width="132" height="231" alt=""><span>吊人</span></a><a href="#c13"><img src="thumbs/13.jpg" width="132" height="226" alt=""><span>死神</span></a><a href="#c14"><img src="thumbs/14.jpg" width="132" height="229" alt=""><span>節制</span></a><a href="#c15"><img src="thumbs/15.jpg" width="132" height="226" alt=""><span>惡魔</span></a><a href="#c16"><img src="thumbs/16.jpg" width="132" height="231" alt=""><span>高塔</span></a><a href="#c17"><img src="thumbs/17.jpg" width="132" height="223" alt=""><span>星星</span></a><a href="#c18"><img src="thumbs/18.jpg" width="132" height="234" alt=""><span>月亮</span></a><a href="#c19"><img src="thumbs/19.jpg" width="132" height="227" alt=""><span>太陽</span></a><a href="#c20"><img src="thumbs/20.jpg" width="132" height="226" alt=""><span>審判</span></a><a href="#c21"><img src="thumbs/21.jpg" width="132" height="225" alt=""><span>世界</span></a></div><h3 class="grp">權杖（火）</h3><div class="grid"><a href="#c22"><img src="thumbs/22.jpg" width="132" height="234" alt=""><span>權杖一</span></a><a href="#c23"><img src="thumbs/23.jpg" width="132" height="224" alt=""><span>權杖二</span></a><a href="#c24"><img src="thumbs/24.jpg" width="132" height="229" alt=""><span>權杖三</span></a><a href="#c25"><img src="thumbs/25.jpg" width="132" height="226" alt=""><span>權杖四</span></a><a href="#c26"><img src="thumbs/26.jpg" width="132" height="233" alt=""><span>權杖五</span></a><a href="#c27"><img src="thumbs/27.jpg" width="132" height="226" alt=""><span>權杖六</span></a><a href="#c28"><img src="thumbs/28.jpg" width="132" height="229" alt=""><span>權杖七</span></a><a href="#c29"><img src="thumbs/29.jpg" width="132" height="224" alt=""><span>權杖八</span></a><a href="#c30"><img src="thumbs/30.jpg" width="132" height="231" alt=""><span>權杖九</span></a><a href="#c31"><img src="thumbs/31.jpg" width="132" height="227" alt=""><span>權杖十</span></a><a href="#c32"><img src="thumbs/32.jpg" width="132" height="229" alt=""><span>權杖侍者</span></a><a href="#c33"><img src="thumbs/33.jpg" width="132" height="224" alt=""><span>權杖騎士</span></a><a href="#c34"><img src="thumbs/34.jpg" width="132" height="232" alt=""><span>權杖皇后</span></a><a href="#c35"><img src="thumbs/35.jpg" width="132" height="223" alt=""><span>權杖國王</span></a></div><h3 class="grp">聖杯（水）</h3><div class="grid"><a href="#c36"><img src="thumbs/36.jpg" width="132" height="229" alt=""><span>聖杯一</span></a><a href="#c37"><img src="thumbs/37.jpg" width="132" height="224" alt=""><span>聖杯二</span></a><a href="#c38"><img src="thumbs/38.jpg" width="132" height="234" alt=""><span>聖杯三</span></a><a href="#c39"><img src="thumbs/39.jpg" width="132" height="226" alt=""><span>聖杯四</span></a><a href="#c40"><img src="thumbs/40.jpg" width="132" height="231" alt=""><span>聖杯五</span></a><a href="#c41"><img src="thumbs/41.jpg" width="132" height="225" alt=""><span>聖杯六</span></a><a href="#c42"><img src="thumbs/42.jpg" width="132" height="234" alt=""><span>聖杯七</span></a><a href="#c43"><img src="thumbs/43.jpg" width="132" height="229" alt=""><span>聖杯八</span></a><a href="#c44"><img src="thumbs/44.jpg" width="132" height="229" alt=""><span>聖杯九</span></a><a href="#c45"><img src="thumbs/45.jpg" width="132" height="223" alt=""><span>聖杯十</span></a><a href="#c46"><img src="thumbs/46.jpg" width="132" height="232" alt=""><span>聖杯侍者</span></a><a href="#c47"><img src="thumbs/47.jpg" width="132" height="227" alt=""><span>聖杯騎士</span></a><a href="#c48"><img src="thumbs/48.jpg" width="132" height="229" alt=""><span>聖杯皇后</span></a><a href="#c49"><img src="thumbs/49.jpg" width="132" height="224" alt=""><span>聖杯國王</span></a></div><h3 class="grp">寶劍（風）</h3><div class="grid"><a href="#c50"><img src="thumbs/50.jpg" width="132" height="231" alt=""><span>寶劍一</span></a><a href="#c51"><img src="thumbs/51.jpg" width="132" height="225" alt=""><span>寶劍二</span></a><a href="#c52"><img src="thumbs/52.jpg" width="132" height="229" alt=""><span>寶劍三</span></a><a href="#c53"><img src="thumbs/53.jpg" width="132" height="224" alt=""><span>寶劍四</span></a><a href="#c54"><img src="thumbs/54.jpg" width="132" height="232" alt=""><span>寶劍五</span></a><a href="#c55"><img src="thumbs/55.jpg" width="132" height="226" alt=""><span>寶劍六</span></a><a href="#c56"><img src="thumbs/56.jpg" width="132" height="232" alt=""><span>寶劍七</span></a><a href="#c57"><img src="thumbs/57.jpg" width="132" height="225" alt=""><span>寶劍八</span></a><a href="#c58"><img src="thumbs/58.jpg" width="132" height="235" alt=""><span>寶劍九</span></a><a href="#c59"><img src="thumbs/59.jpg" width="132" height="227" alt=""><span>寶劍十</span></a><a href="#c60"><img src="thumbs/60.jpg" width="132" height="231" alt=""><span>寶劍侍者</span></a><a href="#c61"><img src="thumbs/61.jpg" width="132" height="224" alt=""><span>寶劍騎士</span></a><a href="#c62"><img src="thumbs/62.jpg" width="132" height="234" alt=""><span>寶劍皇后</span></a><a href="#c63"><img src="thumbs/63.jpg" width="132" height="225" alt=""><span>寶劍國王</span></a></div><h3 class="grp">錢幣（土）</h3><div class="grid"><a href="#c64"><img src="thumbs/64.jpg" width="132" height="229" alt=""><span>錢幣一</span></a><a href="#c65"><img src="thumbs/65.jpg" width="132" height="226" alt=""><span>錢幣二</span></a><a href="#c66"><img src="thumbs/66.jpg" width="132" height="233" alt=""><span>錢幣三</span></a><a href="#c67"><img src="thumbs/67.jpg" width="132" height="227" alt=""><span>錢幣四</span></a><a href="#c68"><img src="thumbs/68.jpg" width="132" height="227" alt=""><span>錢幣五</span></a><a href="#c69"><img src="thumbs/69.jpg" width="132" height="222" alt=""><span>錢幣六</span></a><a href="#c70"><img src="thumbs/70.jpg" width="132" height="233" alt=""><span>錢幣七</span></a><a href="#c71"><img src="thumbs/71.jpg" width="132" height="228" alt=""><span>錢幣八</span></a><a href="#c72"><img src="thumbs/72.jpg" width="132" height="229" alt=""><span>錢幣九</span></a><a href="#c73"><img src="thumbs/73.jpg" width="132" height="227" alt=""><span>錢幣十</span></a><a href="#c74"><img src="thumbs/74.jpg" width="132" height="233" alt=""><span>錢幣侍者</span></a><a href="#c75"><img src="thumbs/75.jpg" width="132" height="225" alt=""><span>錢幣騎士</span></a><a href="#c76"><img src="thumbs/76.jpg" width="132" height="229" alt=""><span>錢幣皇后</span></a><a href="#c77"><img src="thumbs/77.jpg" width="132" height="223" alt=""><span>錢幣國王</span></a></div><p class="draw"><button id="drawBtn" type="button">隨機抽一張練習</button></p></section><section id="journey">
+<h2>愚者之旅 <small>The Fool's Journey</small></h2>
+<p>把 22 張大阿爾克那串成一個故事來讀，這種讀法叫做<b>「愚者之旅」</b>（The Fool's Journey）：0 號愚者是主角，1～21 號是他一路遇到的人、經歷的考驗。</p><p>要先說清楚：這是<b>後人的詮釋框架</b>，不是塔羅牌當初的設計原意。塔羅最早是 15 世紀義大利的紙牌遊戲，到 18 世紀才被拿來占卜；把大牌讀成一趟完整旅程的說法，常被歸功於 20 世紀的美國塔羅作家 Eden Gray，之後 Rachel Pollack 等作家又加以發展，才在現代塔羅教學中普及。</p><p>它之所以流行，是因為真的很好用：22 張牌串成一個故事，比各自死背容易記得多，也能幫你看出每張牌在整體中的位置。</p>
+<div class="note"><p>其實 Waite 自己就埋下了伏筆。他在書中把愚者描寫成「尋求經驗的靈魂」；在全書最後，他請有心的讀者把魔術師、愚者、女祭司、教皇、皇后、皇帝、吊人、高塔，再加上審判放在一起思考，並說這幾張牌「包含了靈魂的傳說」（原文：They contain the legend of the soul）。只是他沒有把它寫成一套完整的旅程，後來的作家才把這個想法展開。</p></div>
+<div class="stage depart"><h3><span class="badge">0</span>出發</h3>
+<div class="depart-row"><a href="#c0"><img src="thumbs/00.jpg" width="132" height="229" alt="愚者"></a><p>一個什麼都還沒經歷過的年輕人，肩上扛著一點家當，手上拿著一朵白玫瑰，站在懸崖邊準備踏出第一步。小狗在腳邊跳著，太陽在背後照著他。他不知道前面有什麼，而這正是旅程的起點。這個人就是 <a class="cl" href="#c0">愚者</a>。</p></div></div>
+<div class="stage"><h3><span class="badge">1～7</span>第一階段：學習外在世界</h3><p class="sub">1～7 號・遇見老師，建立「我」</p><div class="road"><a href="#c1"><img src="thumbs/01.jpg" width="132" height="222" alt=""><span><b>I</b> 魔術師</span></a><a href="#c2"><img src="thumbs/02.jpg" width="132" height="234" alt=""><span><b>II</b> 女祭司</span></a><a href="#c3"><img src="thumbs/03.jpg" width="132" height="223" alt=""><span><b>III</b> 皇后</span></a><a href="#c4"><img src="thumbs/04.jpg" width="132" height="229" alt=""><span><b>IV</b> 皇帝</span></a><a href="#c5"><img src="thumbs/05.jpg" width="132" height="225" alt=""><span><b>V</b> 教皇</span></a><a href="#c6"><img src="thumbs/06.jpg" width="132" height="232" alt=""><span><b>VI</b> 戀人</span></a><a href="#c7"><img src="thumbs/07.jpg" width="132" height="227" alt=""><span><b>VII</b> 戰車</span></a></div><p>出發之後，他遇到的第一位老師是 <a class="cl" href="#c1">魔術師</a>。魔術師告訴他：你需要的工具，桌上都已經有了，重點是把想法化為行動。接著遇到的 <a class="cl" href="#c2">女祭司</a> 教他相反的功課：安靜下來，傾聽那些看不見的東西。</p><p>然後他遇到像母親一樣的 <a class="cl" href="#c3">皇后</a>，學會滋養與感受；又遇到像父親一樣的 <a class="cl" href="#c4">皇帝</a>，學會秩序與規則。<a class="cl" href="#c5">教皇</a> 帶他進入社會，學習群體的傳統與知識。</p><p>學了這麼多別人的教導，他終於要做出自己的選擇。在 <a class="cl" href="#c6">戀人</a> 這一站，他依照自己真正重視的價值，選擇所愛的人與路。最後他駕著 <a class="cl" href="#c7">戰車</a> 出征，憑著意志贏得第一次勝利。這時的他，已經在世界上建立起一個屬於自己的「我」。</p></div><div class="stage"><h3><span class="badge">8～14</span>第二階段：轉向內在</h3><p class="sub">8～14 號・面對自己，舊的我死去</p><div class="road"><a href="#c8"><img src="thumbs/08.jpg" width="132" height="228" alt=""><span><b>VIII</b> 力量</span></a><a href="#c9"><img src="thumbs/09.jpg" width="132" height="223" alt=""><span><b>IX</b> 隱者</span></a><a href="#c10"><img src="thumbs/10.jpg" width="132" height="233" alt=""><span><b>X</b> 命運之輪</span></a><a href="#c11"><img src="thumbs/11.jpg" width="132" height="230" alt=""><span><b>XI</b> 正義</span></a><a href="#c12"><img src="thumbs/12.jpg" width="132" height="231" alt=""><span><b>XII</b> 吊人</span></a><a href="#c13"><img src="thumbs/13.jpg" width="132" height="226" alt=""><span><b>XIII</b> 死神</span></a><a href="#c14"><img src="thumbs/14.jpg" width="132" height="229" alt=""><span><b>XIV</b> 節制</span></a></div><p>外在的成功並沒有回答所有的問題。在 <a class="cl" href="#c8">力量</a> 這一站，他發現真正需要馴服的，是自己心裡那頭獅子，而且要用溫柔，不是蠻力。於是他像 <a class="cl" href="#c9">隱者</a> 一樣離開人群，提著燈獨自向內尋找。</p><p>在 <a class="cl" href="#c10">命運之輪</a> 前，他明白有些事超出自己的掌控，人生有起有落；在 <a class="cl" href="#c11">正義</a> 面前，他學會為自己的選擇負起責任。</p><p>接著他被倒吊起來。<a class="cl" href="#c12">吊人</a> 是自願停下，換一個角度看世界。原本的自己在 <a class="cl" href="#c13">死神</a> 這一站死去：這不是終點，而是騰出空間給新的自己。最後在 <a class="cl" href="#c14">節制</a>，他把新舊的自己慢慢調和成一體。</p></div><div class="stage"><h3><span class="badge">15～21</span>第三階段：試煉與完成</h3><p class="sub">15～21 號・穿過陰影，走向圓滿</p><div class="road"><a href="#c15"><img src="thumbs/15.jpg" width="132" height="226" alt=""><span><b>XV</b> 惡魔</span></a><a href="#c16"><img src="thumbs/16.jpg" width="132" height="231" alt=""><span><b>XVI</b> 高塔</span></a><a href="#c17"><img src="thumbs/17.jpg" width="132" height="223" alt=""><span><b>XVII</b> 星星</span></a><a href="#c18"><img src="thumbs/18.jpg" width="132" height="234" alt=""><span><b>XVIII</b> 月亮</span></a><a href="#c19"><img src="thumbs/19.jpg" width="132" height="227" alt=""><span><b>XIX</b> 太陽</span></a><a href="#c20"><img src="thumbs/20.jpg" width="132" height="226" alt=""><span><b>XX</b> 審判</span></a><a href="#c21"><img src="thumbs/21.jpg" width="132" height="225" alt=""><span><b>XXI</b> 世界</span></a></div><p>重新整合之後，他必須直面自己最深的陰影。<a class="cl" href="#c15">惡魔</a> 讓他看見自己被什麼綁住；仔細一看，鎖鏈其實很鬆。建立在錯誤基礎上的一切，在 <a class="cl" href="#c16">高塔</a> 一次崩塌。</p><p>廢墟之後，<a class="cl" href="#c17">星星</a> 帶來療癒與希望。但 <a class="cl" href="#c18">月亮</a> 的迷霧隨之而來，他得在半明半暗中穿過不安與幻象。走出迷霧，<a class="cl" href="#c19">太陽</a> 照亮一切，他像孩子一樣單純而喜悅。</p><p><a class="cl" href="#c20">審判</a> 的號角響起，那是從他內心發出的召喚，他徹底醒來。最後，他抵達 <a class="cl" href="#c21">世界</a>，在花環中跳舞，旅途中的一切都被整合在一起。</p></div>
+<div class="stage"><h3><span class="badge">21→0</span>回到起點</h3>
+<div class="depart-row"><a href="#c21"><img src="thumbs/21.jpg" width="132" height="225" alt="世界"></a><span class="arrow">→</span><a href="#c0"><img src="thumbs/00.jpg" width="132" height="229" alt="愚者"></a></div>
+<p>但世界並不是終點。帶著這一路的經驗，他又變回愚者，站上下一座懸崖，展開新的一輪旅程。這也是愚者編號為 0 的原因：他沒有固定的位置，可以放在開頭，也可以放在結尾之後。Waite 在書中也說，不管把愚者放在哪裡，他都是「一張沒有編號的牌」。</p></div>
+<h3 class="jh">小阿爾克那：旅途上的日常</h3>
+<p>如果大阿爾克那是旅程中的重大轉折，<b>小阿爾克那就是旅途上的日常</b>：今天和誰吵了架、收到什麼好消息、工作上遇到什麼瓶頸。它們不在主線上，卻是旅人每天實際在過的生活。</p><p><b>四個花色是生活的四個面向</b>：權杖是行動與熱情，聖杯是情感與人際，寶劍是思考與衝突，錢幣是金錢、工作與身體。</p><p><b>每個花色的一到十，本身也是一趟小旅程</b>：一是種子與開端，中間經歷平衡、成長、穩定、衝突、調和、反思、推進，到九接近完成，十則是一個循環的終點，有時也代表過滿、承受不住。所以看到小牌的數字，也可以想想它走到了這段小旅程的哪裡。</p><p><b>宮廷牌是旅途中的人，或你自己在不同階段的樣子</b>：侍者是剛開始學習的新手，騎士是全心投入行動的人，皇后是向內掌握了這個領域的人，國王是向外運用、領導這個領域的人。</p>
+<h3 class="jh">和「英雄旅程」的關係</h3>
+<p>很多人會拿愚者之旅和神話學者 Joseph Campbell 在 1949 年《千面英雄》中提出的「英雄旅程」類比。兩者確實很像，都是「出發 → 試煉 → 死亡與重生 → 歸來」的結構，但它們是各自發展的，不是同一套理論。這種相似也說明了，這類故事結構反映的是人們普遍理解成長的方式。</p>
+<h3 class="jh">怎麼用在解牌上</h3>
+<dl class="use"><dt>問「旅人現在在哪一站？」</dt><dd>抽到大牌時，除了看牌義，也看它的前一站和下一站。例如抽到 <a class="cl" href="#c16">高塔</a>：前一站是 <a class="cl" href="#c15">惡魔</a>，所以這次的崩塌，可能是在打破某種束縛；下一站是 <a class="cl" href="#c17">星星</a>，所以崩塌之後會有療癒。</dd><dt>看它在哪一個階段</dt><dd>第一階段（1～7）多半和外在生活、角色、關係有關；第二階段（8～14）和內在成長、自我面對有關；第三階段（15～21）則是深層的轉變。</dd><dt>大牌很多，代表是人生課題</dt><dd>一次占卜中如果出現很多大牌，代表這件事不只是日常小事，而是比較重要的人生課題。</dd><dt>把它當成輔助，不是唯一正解</dt><dd>愚者之旅是幫助理解的框架。實際解牌時，還是要回到你問的問題、牌陣位置，以及你自己的直覺。</dd></dl>
+</section><section id="major"><h2>大阿爾克那 <small>Major Arcana · 22 張</small></h2><p class="lead">人生的重大課題。0 號愚者是主角，1～21 號常被讀成他一路經歷的旅程，每七張一個階段：1～7 學習外在世界，8～14 轉向內在，15～21 試煉與完成。完整的故事請看<a href="#journey">「愚者之旅」</a>篇章。</p><article class="card" id="c0">
+<figure><img src="cards/00.jpg" width="420" height="728" alt="The Fool（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">0</span> 愚者 <span class="en">The Fool</span></h3>
+<div class="tags"><span class="tag">新的開始</span><span class="tag">冒險</span><span class="tag">自由</span><span class="tag">信任直覺</span></div>
+<h4>讀圖重點</h4><ul><li><b>懸崖邊緣</b>：他一腳已踩到崖邊，視線卻望向天空。這張牌的核心是「信任地往前跳」，也帶著一點「沒看路」的風險。</li><li><b>肩上的棍子與小包袱</b>：全部家當就這麼一點，代表沒有過去的包袱，經驗也還很少。</li><li><b>手上的白玫瑰</b>：純真、動機單純，沒有算計。</li><li><b>華麗的花紋外衣、帽上的紅羽毛</b>：他不是落魄的流浪漢，而是興致勃勃、打扮好要出發的旅人。</li><li><b>腳邊的小白狗</b>：在他身旁跳起來，可以讀成本能在提醒他，也可以讀成陪他一起興奮。</li><li><b>右上角的白色太陽、黃色天空</b>：樂觀、能量充足。</li><li><b>背景的雪山</b>：挑戰在遠方，只是他還沒走到那裡。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>新的開始、冒險、自由、跟著直覺走、不計較得失、純粹的潛能。</dd><dt class="rev">逆位</dt><dd>魯莽、天真過頭、衝動行事；或者反過來，害怕開始，一直站在崖邊不敢跳。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>轉換跑道、嘗試新領域，適合「先跳再說」的時候。</dd><dt>感情</dt><dd>一段新鮮、輕鬆的關係，但雙方可能都還沒想清楚。</dd><dt>建議</dt><dd>別再過度計畫，先踏出第一步，但也記得低頭看一下路。</dd></dl><p class="journey"><b>愚者之旅：</b>旅程的主角。編號 0 代表他沒有固定位置，可以出現在任何一站；走到 21 號世界之後，又會變回愚者，展開下一輪。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>愚行、狂熱、放縱、沉醉、譫妄、瘋狂、洩露秘密。</dd><dt>逆位</dt><dd>疏忽、缺席、分散、粗心、冷漠、虛無、虛榮。</dd></dl><p class="diff"><b>差異：</b>差異非常大。Waite 的占卜牌義幾乎全是負面的「愚蠢」。但他在描寫圖像象徵的章節裡，卻說愚者是「尋求經驗的靈魂」，崖邊對他毫無威脅，「彷彿天使在等著托住他」。現代讀法走的是後者。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c1">
+<figure><img src="cards/01.jpg" width="420" height="707" alt="The Magician（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">I</span> 魔術師 <span class="en">The Magician</span></h3>
+<div class="tags"><span class="tag">意志</span><span class="tag">行動</span><span class="tag">技能</span><span class="tag">資源齊備</span></div>
+<h4>讀圖重點</h4><ul><li><b>一手指天、一手指地</b>：右手高舉白色權杖，左手指向地面。意思是把天上的靈感引到現實裡，他像一條「通道」。</li><li><b>頭上的 ∞ 符號</b>：無限的可能，能量源源不絕。</li><li><b>桌上的杯、錢幣、劍與權杖</b>：剛好是小阿爾克那的四個花色，代表情感、物質、思考、行動四種資源，他全都有了。</li><li><b>紅色外袍、白色內衣</b>：紅是熱情與行動，白是純粹的動機。</li><li><b>上方與腳下的紅玫瑰、白百合</b>：慾望與純潔並存。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>意志力、行動力、技能純熟、資源齊備、把想法化為現實的時機到了。</dd><dt class="rev">逆位</dt><dd>才能沒被用上、精力分散；或把才能用在歪路上，例如操弄、話術、詐騙。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>你有足夠的能力和資源，適合主動提案、開始新專案。</dd><dt>感情</dt><dd>主動表達的時候；逆位則要小心對方說得好聽、卻不真誠。</dd><dt>建議</dt><dd>不要再等條件更好，盤點手上已有的東西，現在就開始用。</dd></dl><p class="journey"><b>愚者之旅：</b>旅人遇到的第一位老師，教他「你已經擁有需要的工具」。愚者是潛能，魔術師是把潛能付諸行動。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>技巧、外交手腕、應對得體、機敏；疾病、痛苦、損失、災禍、敵人的陷阱；自信、意志；若問卜者是男性，也可代表他本人。</dd><dt>逆位</dt><dd>醫生、術士、精神疾病、恥辱、不安。</dd></dl><p class="diff"><b>差異：</b>「技巧、自信、意志」與現代讀法一致，但 Waite 的清單也混入了疾病、災禍等互相矛盾的舊式算命用語。圖像章節中他強調的是「天上的力量降到地上」，正是現代讀法的基礎。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c2">
+<figure><img src="cards/02.jpg" width="420" height="744" alt="The High Priestess（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">II</span> 女祭司 <span class="en">The High Priestess</span></h3>
+<div class="tags"><span class="tag">直覺</span><span class="tag">內在智慧</span><span class="tag">秘密</span><span class="tag">靜觀</span></div>
+<h4>讀圖重點</h4><ul><li><b>黑白兩根柱子 B 與 J</b>：傳說中所羅門神殿的兩根柱子，代表二元對立，她坐在兩者之間，保持平衡。</li><li><b>背後的帷幕</b>：上面有石榴與棕櫚葉，帷幕後面是看不見的世界，她守著入口。</li><li><b>手中半掩的卷軸「TORA」</b>：律法、真理，只露出一部分，代表有些事只能意會。</li><li><b>頭上的月亮冠、腳邊的新月</b>：月亮代表直覺、潛意識與週期。</li><li><b>如水流動的藍色長袍</b>：沉靜、深邃，像水面下的世界。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>直覺、內在智慧、潛意識、尚未揭曉的事、靜觀其變、不急著行動。</dd><dt class="rev">逆位</dt><dd>忽略直覺、與內在失聯；或有隱藏的意圖、秘密即將浮上檯面。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>資訊還不完整，先觀察、收集情報，別急著表態。</dd><dt>感情</dt><dd>有些感受沒說出口；也可能是一段需要時間醞釀的關係。</dd><dt>建議</dt><dd>安靜下來，聽聽自己的直覺怎麼說。</dd></dl><p class="journey"><b>愚者之旅：</b>第二位老師。魔術師教他向外行動，女祭司教他向內傾聽。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>秘密、神秘、尚未揭曉的未來；（對男性問卜者）讓他在意的女性，（對女性問卜者）問卜者本人；沉默、堅持；奧秘、智慧、學問。</dd><dt>逆位</dt><dd>激情、道德或身體上的熱烈、自負、膚淺的知識。</dd></dl><p class="diff"><b>差異：</b>大致一致，都強調秘密、沉默與智慧。Waite 在圖像章節裡甚至說，這張在某些方面是大阿爾克那中「最崇高神聖」的一張。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c3">
+<figure><img src="cards/03.jpg" width="420" height="711" alt="The Empress（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">III</span> 皇后 <span class="en">The Empress</span></h3>
+<div class="tags"><span class="tag">豐盛</span><span class="tag">滋養</span><span class="tag">創造</span><span class="tag">大自然</span></div>
+<h4>讀圖重點</h4><ul><li><b>十二顆星的冠冕</b>：常被讀成一年十二個月，代表自然的循環。</li><li><b>心形盾牌上的金星符號 ♀</b>：愛、美與女性的力量。</li><li><b>前方成熟的麥田、背後的森林與流水</b>：豐收、生命力與滋養。</li><li><b>石榴花紋的長袍</b>：石榴多子，象徵豐饒與孕育。</li><li><b>舒適的靠墊</b>：她不是坐在冰冷的王座上，而是放鬆地坐在大自然中。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>豐盛、滋養、孕育（字面或比喻上的）、創造力、享受感官與生活、與大自然連結。</dd><dt class="rev">逆位</dt><dd>創造力受阻、過度依賴或過度照顧別人、忽略照顧自己。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>創意與成果正在成熟，適合需要耐心培育的專案。</dd><dt>感情</dt><dd>溫暖、穩定、互相照顧的關係；有時也指懷孕或家庭。</dd><dt>建議</dt><dd>對自己好一點，花時間在讓你感到富足的事物上。</dd></dl><p class="journey"><b>愚者之旅：</b>旅人遇到的母親形象，教他滋養與感受。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>豐饒、行動、主動、長壽；未知、隱秘之事；也有困難、疑慮、無知。</dd><dt>逆位</dt><dd>光明、真相、釐清複雜的事、公開的喜慶；另一說為動搖不定。</dd></dl><p class="diff"><b>差異：</b>「豐饒」一致，但 Waite 清單還混了「困難、無知」這類矛盾詞，逆位反而偏正面。現代讀法基本只保留了豐饒與滋養。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c4">
+<figure><img src="cards/04.jpg" width="420" height="729" alt="The Emperor（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">IV</span> 皇帝 <span class="en">The Emperor</span></h3>
+<div class="tags"><span class="tag">秩序</span><span class="tag">權威</span><span class="tag">穩定</span><span class="tag">結構</span></div>
+<h4>讀圖重點</h4><ul><li><b>石造王座上的四個公羊頭</b>：公羊代表牡羊座，象徵領導、開創與意志。</li><li><b>右手的安卡（古埃及生命符號）權杖、左手的寶球</b>：統治與掌控世界。</li><li><b>長袍下露出的鎧甲</b>：隨時準備保護自己的領土。</li><li><b>白色長鬍子</b>：經驗與成熟。</li><li><b>背後光禿的橘色山脈</b>：堅硬、不易改變，也有點嚴峻。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>秩序、結構、權威、穩定、領導、規則、父親形象、用紀律達成目標。</dd><dt class="rev">逆位</dt><dd>過度控制、僵化、專制；或反過來，缺乏紀律與架構。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>需要建立制度與流程；也可能代表主管或權威人物。</dd><dt>感情</dt><dd>穩定可靠，但可能偏理性、缺少浪漫；也要注意控制欲。</dd><dt>建議</dt><dd>訂好規則和計畫，照表操課。</dd></dl><p class="journey"><b>愚者之旅：</b>旅人遇到的父親形象，教他秩序與規則。皇后是自然的生長，皇帝是人為的建構。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>穩定、權力、保護、實現；大人物；援助、理性、信念；權威與意志。</dd><dt>逆位</dt><dd>仁慈、同情、信用；也有讓敵人混亂、阻礙、不成熟。</dd></dl><p class="diff"><b>差異：</b>正位幾乎與現代讀法相同。逆位 Waite 偏向「仁慈」，現代則多讀成控制過度或失序。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c5">
+<figure><img src="cards/05.jpg" width="420" height="715" alt="The Hierophant（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">V</span> 教皇 <span class="en">The Hierophant</span></h3>
+<div class="tags"><span class="tag">傳統</span><span class="tag">體制</span><span class="tag">教導</span><span class="tag">信念</span></div>
+<h4>讀圖重點</h4><ul><li><b>三重冠與三重十字權杖</b>：宗教權威，掌管精神世界的秩序。</li><li><b>右手的祝福手勢</b>：兩指向上，傳達教義與祝福。</li><li><b>兩根灰色柱子</b>：和女祭司的柱子不同，這裡是公開的殿堂，不是隱密的神殿。</li><li><b>腳前跪著的兩位修士</b>：學生、信徒，代表傳承。</li><li><b>腳邊交叉的兩把鑰匙</b>：通往知識與救贖的鑰匙。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>傳統、體制、正規教育、導師、群體的共同信念、依循慣例、儀式（例如婚禮）。</dd><dt class="rev">逆位</dt><dd>挑戰傳統、不想照規矩走、找自己的路；或被體制束縛。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>照既有流程走、向前輩請教；也可能是考證照、正式進修。</dd><dt>感情</dt><dd>傳統的、被家人認可的關係，或正式承諾、婚姻。</dd><dt>建議</dt><dd>找一位老師或可靠的方法，跟著學。</dd></dl><p class="journey"><b>愚者之旅：</b>旅人進入社會，學習群體的知識與規範。女祭司是隱密的智慧，教皇是公開的教導。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>婚姻、結盟、受束縛、奴役；另一說為仁慈與良善；靈感；問卜者會去求助的人。</dd><dt>逆位</dt><dd>社交、良好的理解、和諧、過度好心、軟弱。</dd></dl><p class="diff"><b>差異：</b>「婚姻、結盟」至今仍是常見讀法。Waite 在圖像章節中說他代表「外在宗教的權力」，相對於女祭司代表的「內在、隱密的智慧」，這組對比也被現代讀法沿用。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c6">
+<figure><img src="cards/06.jpg" width="420" height="738" alt="The Lovers（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">VI</span> 戀人 <span class="en">The Lovers</span></h3>
+<div class="tags"><span class="tag">愛</span><span class="tag">結合</span><span class="tag">價值觀</span><span class="tag">選擇</span></div>
+<h4>讀圖重點</h4><ul><li><b>上方的天使與太陽</b>：天使張開雙臂祝福兩人，代表更高的力量見證這段關係。</li><li><b>赤裸的男女</b>：坦誠相對、毫無隱藏，像伊甸園中的亞當與夏娃。</li><li><b>女人身後的果樹與纏繞的蛇</b>：知善惡樹，代表誘惑與選擇。</li><li><b>男人身後結著火焰的樹</b>：Waite 說這是結了十二個果實的生命之樹，畫成火焰的樣子，代表熱情。</li><li><b>中間的山</b>：兩人之間要共同面對的挑戰。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>愛、結合、和諧的關係、價值觀一致、出於真心的重要選擇。</dd><dt class="rev">逆位</dt><dd>關係失衡、價值觀不合、溝通不良；或逃避做選擇。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>合作夥伴關係；或必須依照自己的價值觀做出選擇。</dd><dt>感情</dt><dd>深刻的連結與吸引，彼此坦誠。</dd><dt>建議</dt><dd>做決定時，問問自己真正重視的是什麼。</dd></dl><p class="journey"><b>愚者之旅：</b>旅人第一次面對真正的選擇，決定要成為什麼樣的人。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>吸引、愛、美、克服考驗。</dd><dt>逆位</dt><dd>失敗、愚蠢的計畫；另一說為婚事受阻、各種不順。</dd></dl><p class="diff"><b>差異：</b>大致一致。舊式塔羅牌的這張是「一個男人站在兩個女人之間」，因此衍生出「選擇」的含義；Waite 改畫成亞當與夏娃，現代讀法則把愛與選擇兩層意思合在一起。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c7">
+<figure><img src="cards/07.jpg" width="420" height="722" alt="The Chariot（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">VII</span> 戰車 <span class="en">The Chariot</span></h3>
+<div class="tags"><span class="tag">意志</span><span class="tag">勝利</span><span class="tag">掌控</span><span class="tag">前進</span></div>
+<h4>讀圖重點</h4><ul><li><b>站在石造戰車上的年輕戰士</b>：身穿鎧甲、頭戴星冠，手持權杖。</li><li><b>一黑一白的兩隻人面獅身獸</b>：代表相反的力量。仔細看，他手上沒有韁繩，靠的是意志力讓牠們往同一個方向走。</li><li><b>綴滿星星的頂篷</b>：受到上天的庇佑。</li><li><b>肩上的兩個月亮臉</b>：情緒與直覺，被他穿戴在身上、掌握住。</li><li><b>背後的城市</b>：他已經離開安穩的城市，出征了。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>意志力、決心、勝利、克服阻礙、掌控相互衝突的力量、往前推進。</dd><dt class="rev">逆位</dt><dd>失去方向、失控、被拉往不同方向；或太過強硬、橫衝直撞。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>專注目標、全力衝刺，有機會打贏一場硬仗。</dd><dt>感情</dt><dd>需要主動爭取；也提醒別把關係當成要「贏」的比賽。</dd><dt>建議</dt><dd>把分散的力量收攏，朝一個方向前進。</dd></dl><p class="journey"><b>愚者之旅：</b>旅人的第一次勝利，建立起社會上的「我」。第一排（1～7）在這裡告一段落。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>援助、天佑；也有戰爭、勝利、自負、報復、麻煩。</dd><dt>逆位</dt><dd>暴動、爭吵、爭執、訴訟、失敗。</dd></dl><p class="diff"><b>差異：</b>「勝利」一致。有個小細節：Waite 在書裡寫戰士「拿著出鞘的劍」，但 Pamela Smith 畫出來的卻是權杖，可見圖與文字並非完全一致。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c8">
+<figure><img src="cards/08.jpg" width="420" height="726" alt="Strength（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">VIII</span> 力量 <span class="en">Strength</span></h3>
+<div class="tags"><span class="tag">內在力量</span><span class="tag">勇氣</span><span class="tag">溫柔</span><span class="tag">耐心</span></div>
+<h4>讀圖重點</h4><ul><li><b>白衣女子溫柔地捧著獅子的嘴</b>：不是用蠻力壓制，而是用溫柔讓獅子馴服。</li><li><b>頭上的 ∞ 符號</b>：與魔術師相同，代表源源不絕的力量。</li><li><b>花冠與花環</b>：她用一條花鏈牽著獅子，柔軟的東西反而最有力量。</li><li><b>溫馴的紅色獅子</b>：代表本能、慾望與激烈的情緒。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>內在力量、勇氣、耐心、同理、溫柔而堅定、駕馭自己的情緒與本能。</dd><dt class="rev">逆位</dt><dd>自我懷疑、缺乏信心；或情緒失控、被本能牽著走。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>用耐心與柔軟的方式處理棘手的人或事，比硬碰硬有效。</dd><dt>感情</dt><dd>以理解和包容面對對方的情緒。</dd><dt>建議</dt><dd>真正的力量是穩住自己，不是壓倒別人。</dd></dl><p class="journey"><b>愚者之旅：</b>第二排（8～14）的開始：旅人從外在的成功轉向內在，先學會駕馭自己的本能。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>力量、能量、行動、勇氣、寬宏大量；完全的成功與榮譽。</dd><dt>逆位</dt><dd>專制、濫用權力、軟弱、不和，有時甚至是恥辱。</dd></dl><p class="diff"><b>差異：</b>大致一致。Waite 原書稱這張為「堅毅」（Fortitude）。把它和正義對調、改成 8 號的也是他，理由他只說「令他自己滿意」，沒有多做解釋。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c9">
+<figure><img src="cards/09.jpg" width="420" height="711" alt="The Hermit（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">IX</span> 隱者 <span class="en">The Hermit</span></h3>
+<div class="tags"><span class="tag">內省</span><span class="tag">獨處</span><span class="tag">尋找</span><span class="tag">內在指引</span></div>
+<h4>讀圖重點</h4><ul><li><b>站在雪山頂上的老人</b>：已經走到高處，遠離人群。</li><li><b>提燈裡的六芒星</b>：真理之光，照亮他自己的路，也能指引後來的人。</li><li><b>長長的權杖</b>：支撐他走過漫長的路，也代表經驗。</li><li><b>低頭的姿態、灰色長袍</b>：謙虛、沉靜、向內看。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>內省、獨處、尋找答案、內在指引、暫時退出喧囂、成為別人的引路人。</dd><dt class="rev">逆位</dt><dd>過度孤立、寂寞、封閉自己；或拒絕面對內在的課題。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>需要獨立研究、深入思考的階段；不適合衝業績或社交。</dd><dt>感情</dt><dd>需要個人空間；也可能是單身、專注在自己身上的時期。</dd><dt>建議</dt><dd>給自己一段安靜的時間，答案在你心裡。</dd></dl><p class="journey"><b>愚者之旅：</b>旅人第一次獨自上路，向內尋找真理。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>謹慎、周到；也特別指背叛、偽裝、詐欺、腐敗。</dd><dt>逆位</dt><dd>隱藏、偽裝、權謀、恐懼、沒來由的過度謹慎。</dd></dl><p class="diff"><b>差異：</b>差異很大。Waite 的占卜牌義偏向「背叛、偽裝」；但在圖像章節裡，他說隱者高舉燈火，意思是「我在的地方，你也能到達」，這才是現代讀法的來源。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c10">
+<figure><img src="cards/10.jpg" width="420" height="742" alt="Wheel of Fortune（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">X</span> 命運之輪 <span class="en">Wheel of Fortune</span></h3>
+<div class="tags"><span class="tag">循環</span><span class="tag">轉折</span><span class="tag">機運</span><span class="tag">命運</span></div>
+<h4>讀圖重點</h4><ul><li><b>轉動的大輪子</b>：上面寫著 T-A-R-O（可重組成 ROTA，拉丁文「輪子」）與希伯來字母的神名，代表命運不停運轉。</li><li><b>頂端拿劍的人面獅身</b>：在轉動中保持平衡與智慧。</li><li><b>左側往下的蛇、右側往上的紅色胡狼頭神</b>：有起就有落，有落就有起。</li><li><b>四個角落帶翅膀、在讀書的天使、老鷹、公牛、獅子</b>：Waite 說這是《以西結書》裡的四活物；現代也常對應到四個固定星座，象徵在變動之中保持穩定。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>人生的循環、轉折點、命運、好運降臨、變化正在發生。</dd><dt class="rev">逆位</dt><dd>運氣不佳、抗拒改變；或陷在重複的模式裡跳不出來。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>局勢正在轉變，可能有意外的機會或變動。</dd><dt>感情</dt><dd>關係進入新的階段；也可能是「緣分到了」。</dd><dt>建議</dt><dd>接受變化是常態，順勢而為。</dd></dl><p class="journey"><b>愚者之旅：</b>旅人意識到，有些事超出個人的掌控。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>命運、好運、成功、高升、運氣、幸福。</dd><dt>逆位</dt><dd>增加、豐盛、過剩。</dd></dl><p class="diff"><b>差異：</b>正位一致。Waite 連逆位都偏正面，現代讀法則把逆位讀成運勢下滑或抗拒改變。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c11">
+<figure><img src="cards/11.jpg" width="420" height="731" alt="Justice（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">XI</span> 正義 <span class="en">Justice</span></h3>
+<div class="tags"><span class="tag">公平</span><span class="tag">真相</span><span class="tag">因果</span><span class="tag">負責</span></div>
+<h4>讀圖重點</h4><ul><li><b>右手直立的劍</b>：清晰的判斷、做出決定。</li><li><b>左手的天秤</b>：衡量、公平。</li><li><b>兩根柱子與紫色帷幕</b>：和女祭司一樣坐在柱子之間，但這裡處理的是現實世界的對錯。</li><li><b>正面直視的眼神</b>：誠實面對，不偏不倚。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>公平、真相、因果、為自己的行為負責、法律事務、理性的決定。</dd><dt class="rev">逆位</dt><dd>不公平、不誠實、逃避責任；或法律事務對你不利。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>合約、法律事務、考核；做事要對得起良心。</dd><dt>感情</dt><dd>需要坦誠面對彼此，把話講清楚。</dd><dt>建議</dt><dd>誠實看待事實，該負責的就負起來。</dd></dl><p class="journey"><b>愚者之旅：</b>旅人學會為自己的選擇承擔後果。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>公平、正確、正直、執行；訴訟中有理的一方勝出。</dd><dt>逆位</dt><dd>各種法律事務、法律糾紛、偏執、偏見、過度嚴厲。</dd></dl><p class="diff"><b>差異：</b>幾乎一致。注意編號：偉特牌是 11 號，馬賽牌和托特牌則是 8 號。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c12">
+<figure><img src="cards/12.jpg" width="420" height="736" alt="The Hanged Man（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">XII</span> 吊人 <span class="en">The Hanged Man</span></h3>
+<div class="tags"><span class="tag">暫停</span><span class="tag">放下</span><span class="tag">換個角度</span><span class="tag">犧牲</span></div>
+<h4>讀圖重點</h4><ul><li><b>倒吊在 T 形活樹上</b>：樹上還有綠葉，代表這不是死亡，而是「暫停中的生命」。</li><li><b>交叉成「4」字形的雙腿、反綁在背後的雙手</b>：他沒有掙扎，是自願接受的。</li><li><b>頭上的光環</b>：在倒掛中得到領悟。</li><li><b>平靜的臉</b>：Waite 特別指出，他的表情是「深深的出神」，不是痛苦。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>暫停、等待、放下控制、換個角度看事情、為更大的目標暫時犧牲。</dd><dt class="rev">逆位</dt><dd>拖延、卡住、無謂的犧牲；或抗拒放手。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>事情暫時推不動，與其硬推，不如重新檢視方向。</dd><dt>感情</dt><dd>關係進入停滯期；也可能是一方在默默付出。</dd><dt>建議</dt><dd>先停下來，換個角度看，答案可能會自己浮現。</dd></dl><p class="journey"><b>愚者之旅：</b>旅人主動放下原本的看法，以全新的角度看世界。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>智慧、謹慎、洞察、考驗、犧牲、直覺、占卜、預言。</dd><dt>逆位</dt><dd>自私、群眾、政治團體。</dd></dl><p class="diff"><b>差異：</b>正位相當接近。Waite 說這張的意義「完全被遮掩」，所有已出版的解釋都不得要領，他自己的看法是它表達了「神與宇宙之間的關係」。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c13">
+<figure><img src="cards/13.jpg" width="420" height="720" alt="Death（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">XIII</span> 死神 <span class="en">Death</span></h3>
+<div class="tags"><span class="tag">結束</span><span class="tag">轉變</span><span class="tag">放下</span><span class="tag">新生</span></div>
+<h4>讀圖重點</h4><ul><li><b>騎白馬、穿黑色鎧甲的骷髏</b>：死亡無可避免。他手上沒有武器，是緩緩前進的。</li><li><b>黑旗上的白玫瑰</b>：Waite 說這朵玫瑰代表「生命」，在終結之中仍有生命。</li><li><b>倒地的國王、合掌的主教、別過頭的少女、跪著的孩子</b>：不論身分，所有人都要面對結束，每個人的反應也不一樣。</li><li><b>遠方兩座塔之間升起的太陽</b>：結束之後，就是新的開始。</li><li><b>河上的小船</b>：渡往另一個階段。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>結束、轉變、一個階段畫下句點、放下舊的、為新的騰出空間。通常不是字面上的死亡。</dd><dt class="rev">逆位</dt><dd>抗拒改變、停滯、拖著不肯結束；或改變正在緩慢發生。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>某個職位、專案或做事方式正在結束，準備迎接新階段。</dd><dt>感情</dt><dd>關係的某種形式結束，可能是分手，也可能是關係進入新階段。</dd><dt>建議</dt><dd>該結束的就讓它結束，才有空間迎接新的事物。</dd></dl><p class="journey"><b>愚者之旅：</b>舊的自我死去。這是旅程中必經的轉化，不是終點。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>終結、死亡、毀滅、腐朽；（對男性）失去恩人，（對女性）諸多不順，（對未婚女性）婚事落空。</dd><dt>逆位</dt><dd>停滯、沉睡、昏沉、僵化、夢遊；希望破滅。</dd></dl><p class="diff"><b>差異：</b>差異明顯。Waite 的占卜牌義是字面上的死亡與毀滅；但在圖像章節裡，他說這張描繪的是「轉化，從較低處進入較高處」。現代讀法幾乎都採後者，把它讀成轉變而非死亡。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c14">
+<figure><img src="cards/14.jpg" width="420" height="728" alt="Temperance（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">XIV</span> 節制 <span class="en">Temperance</span></h3>
+<div class="tags"><span class="tag">平衡</span><span class="tag">調和</span><span class="tag">耐心</span><span class="tag">中庸</span></div>
+<h4>讀圖重點</h4><ul><li><b>在兩個杯子間倒水的天使</b>：把兩種不同的東西調和在一起。Waite 說天使倒的是「生命的精華」。</li><li><b>一腳在水裡、一腳在陸地</b>：在情感與現實之間取得平衡。</li><li><b>胸前方形裡的三角形、額頭上的太陽記號</b>：身體與精神的結合。</li><li><b>岸邊的鳶尾花</b>：在希臘神話裡，彩虹女神 Iris 是眾神的使者，連結天與地。</li><li><b>通往遠方山頂的小路與光</b>：這是一條需要耐心、慢慢走的路。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>平衡、中庸、耐心、調和不同的元素、慢慢來、療癒。</dd><dt class="rev">逆位</dt><dd>失衡、過度、急躁、不懂得適可而止。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>協調各方意見、整合資源；慢工出細活。</dd><dt>感情</dt><dd>互相包容、找到兩人都舒服的相處節奏。</dd><dt>建議</dt><dd>凡事適量，不要走極端。</dd></dl><p class="journey"><b>愚者之旅：</b>經歷死神的結束後，旅人學會把新舊的自己重新整合。第二排（8～14）在這裡結束。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>節約、節制、儉省、管理、調和適應。</dd><dt>逆位</dt><dd>與教會、宗教、教派、神職人員有關的事，有時甚至是將為問卜者主持婚禮的神父；也指不合、不好的組合、利益衝突。</dd></dl><p class="diff"><b>差異：</b>正位一致。逆位 Waite 的「與教會有關的事」是很古老的算命用語，現代幾乎不用。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c15">
+<figure><img src="cards/15.jpg" width="420" height="719" alt="The Devil（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">XV</span> 惡魔 <span class="en">The Devil</span></h3>
+<div class="tags"><span class="tag">束縛</span><span class="tag">誘惑</span><span class="tag">執著</span><span class="tag">陰影</span></div>
+<h4>讀圖重點</h4><ul><li><b>蹲在台座上的山羊頭惡魔</b>：頭上有倒五芒星，背後有蝙蝠翅膀。</li><li><b>舉起的右手</b>：正好是教皇祝福手勢的反面。</li><li><b>向下的火炬</b>：被誤用的能量。</li><li><b>被鐵鍊鎖住的赤裸男女</b>：長出了尾巴，代表被慾望與本能支配。但仔細看，鎖鍊很鬆，他們其實可以自己把它拿下來。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>束縛、執著、成癮、物慾、被誘惑、陷在不健康的關係或模式裡、面對自己的陰影面。</dd><dt class="rev">逆位</dt><dd>開始掙脫、擺脫束縛、重新拿回主導權；也可能是更深地陷進去。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>被錢或現實綁住，做著不喜歡卻離不開的事。</dd><dt>感情</dt><dd>強烈的吸引或依賴，要分辨是愛還是執著。</dd><dt>建議</dt><dd>看清楚綁住你的是什麼，鎖鍊可能比你想的還鬆。</dd></dl><p class="journey"><b>愚者之旅：</b>第三排（15～21）的開始：旅人必須直面自己的陰影。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>摧殘、暴力、激烈、非常的努力、力量、宿命；注定之事，但未必因此是惡。</dd><dt>逆位</dt><dd>邪惡的宿命、軟弱、渺小、盲目。</dd></dl><p class="diff"><b>差異：</b>側重點不同。Waite 的牌義偏向「激烈的力量與宿命」；現代讀法則強調圖像中被鎖鏈束縛的人，讀成執著與成癮。Waite 也提到這兩人「不會永遠被他主宰」。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c16">
+<figure><img src="cards/16.jpg" width="420" height="735" alt="The Tower（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">XVI</span> 高塔 <span class="en">The Tower</span></h3>
+<div class="tags"><span class="tag">劇變</span><span class="tag">崩解</span><span class="tag">覺醒</span><span class="tag">意外</span></div>
+<h4>讀圖重點</h4><ul><li><b>被閃電擊中的高塔</b>：建在岩石尖上，看似堅固，其實根基不穩。</li><li><b>被打飛的王冠</b>：自以為是的權威或信念被推翻。</li><li><b>從窗口竄出的火焰、頭下腳上墜落的兩個人</b>：突如其來、無法控制的變化。</li><li><b>空中落下的火花</b>：形狀像希伯來字母 Yod，有人讀成「神的恩典」：毀滅之中也帶著啟示。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>突如其來的劇變、崩解、真相揭露、虛假的結構倒塌、震撼後的覺醒。</dd><dt class="rev">逆位</dt><dd>逃過一劫、害怕改變而勉強撐著；或崩解延後發生、變化在內心進行。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>突發狀況、計畫被打亂；也可能是早該面對的問題爆開了。</dd><dt>感情</dt><dd>衝突或真相揭露，讓關係面臨考驗。</dd><dt>建議</dt><dd>倒塌的通常是本來就不穩的東西，把它當成重建的機會。</dd></dl><p class="journey"><b>愚者之旅：</b>惡魔之後，旅人建在錯誤基礎上的東西被一次打碎。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>悲慘、困苦、貧困、逆境、災難、恥辱、欺騙、毀滅；尤其指意料之外的災變。</dd><dt>逆位</dt><dd>一說同正位但程度較輕；也有壓迫、監禁、暴政。</dd></dl><p class="diff"><b>差異：</b>一致，都是劇變與毀滅。Waite 補充說，倒塌的是一座「虛假之屋」，這也是現代讀法中「打破假象」的由來。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c17">
+<figure><img src="cards/17.jpg" width="420" height="711" alt="The Star（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">XVII</span> 星星 <span class="en">The Star</span></h3>
+<div class="tags"><span class="tag">希望</span><span class="tag">療癒</span><span class="tag">平靜</span><span class="tag">信念</span></div>
+<h4>讀圖重點</h4><ul><li><b>一顆八芒大星與七顆小星</b>：在黑暗之後重新出現的光。</li><li><b>赤裸的女子</b>：卸下一切防備，坦然、真誠。</li><li><b>一腳跪在陸地、一腳踩在水上</b>：在現實與情感之間取得平衡。</li><li><b>兩手各拿一個水壺</b>：一壺倒回池中，一壺澆灌大地，代表滋養與更新。</li><li><b>右邊樹上的小鳥</b>：希望、靈魂的象徵。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>希望、療癒、平靜、重拾信心、靈感、對未來有信念。</dd><dt class="rev">逆位</dt><dd>失去希望、灰心、對自己沒信心；或療癒還需要時間。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>低潮之後重新看見方向，可以開始規劃。</dd><dt>感情</dt><dd>傷口逐漸癒合，關係變得單純而真誠。</dd><dt>建議</dt><dd>相信事情會好轉，慢慢照顧好自己。</dd></dl><p class="journey"><b>愚者之旅：</b>高塔崩塌之後的療癒，旅人重新找回希望。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>失去、竊盜、匱乏、被拋棄；另一說為希望與光明的前景。</dd><dt>逆位</dt><dd>傲慢、自大、無力。</dd></dl><p class="diff"><b>差異：</b>差異很大。Waite 的占卜牌義以「失去、竊盜」為主，「希望」只是另一種說法；他甚至嫌「希望」是「俗氣的解釋」。現代讀法卻幾乎完全採用「希望與療癒」。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c18">
+<figure><img src="cards/18.jpg" width="420" height="743" alt="The Moon（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">XVIII</span> 月亮 <span class="en">The Moon</span></h3>
+<div class="tags"><span class="tag">迷惘</span><span class="tag">不安</span><span class="tag">幻象</span><span class="tag">潛意識</span></div>
+<h4>讀圖重點</h4><ul><li><b>有臉的月亮</b>：月光是反射的光，看得見，但看不清楚。</li><li><b>對著月亮嚎叫的狗與狼</b>：一隻馴化、一隻野性，代表理性與本能的不安。</li><li><b>從水池爬出的螯蝦</b>：潛意識深處浮上來的東西。</li><li><b>兩座塔之間蜿蜒的小路</b>：通往未知的路，只能在半明半暗中摸索。</li><li><b>落下的光點</b>：月亮的露水，像是思緒落下。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>迷惘、不確定、焦慮、恐懼、幻象與誤解、潛意識浮現、直覺在作用。</dd><dt class="rev">逆位</dt><dd>迷霧散去、真相浮現、擺脫恐懼；或把不安壓抑下去。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>資訊不清、可能有誤會或隱情，先別做重大決定。</dd><dt>感情</dt><dd>不安全感、猜疑，或有說不清楚的事。</dd><dt>建議</dt><dd>承認自己不確定，慢慢走，等看清楚再判斷。</dd></dl><p class="journey"><b>愚者之旅：</b>旅人重拾希望後，必須穿過潛意識的迷霧。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>暗中的敵人、危險、中傷、黑暗、恐懼、欺騙、神秘的力量、錯誤。</dd><dt>逆位</dt><dd>不穩定、反覆無常、沉默、程度較輕的欺騙與錯誤。</dd></dl><p class="diff"><b>差異：</b>大致一致，都是不安、欺騙與迷惘。Waite 說狗與狼是「天性中的恐懼」，月亮代表「脫離靈性的想像生活」。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c19">
+<figure><img src="cards/19.jpg" width="420" height="723" alt="The Sun（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">XIX</span> 太陽 <span class="en">The Sun</span></h3>
+<div class="tags"><span class="tag">喜悅</span><span class="tag">成功</span><span class="tag">活力</span><span class="tag">明朗</span></div>
+<h4>讀圖重點</h4><ul><li><b>巨大的、有臉的太陽</b>：直接的光，和月亮的反射光正好相反，一切都清楚明白。</li><li><b>騎在白馬上的赤裸孩子</b>：天真、坦然，無所隱藏，張開雙臂迎接世界。</li><li><b>巨大的紅色旗幟</b>：活力與喜悅。</li><li><b>牆上的向日葵</b>：向著光生長。牆在身後，代表他已經走出圍牆。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>喜悅、成功、活力、樂觀、自信、一切明朗、單純的快樂。</dd><dt class="rev">逆位</dt><dd>暫時的低落、快樂被遮住；或過度樂觀、自信過頭。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>成果獲得肯定，順利、有成就感。</dd><dt>感情</dt><dd>快樂、坦誠、溫暖的關係。</dd><dt>建議</dt><dd>保持開朗，放心展現真實的自己。</dd></dl><p class="journey"><b>愚者之旅：</b>穿過月亮的迷霧後，旅人迎來清明與喜悅。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>物質上的幸福、美滿的婚姻、滿足。</dd><dt>逆位</dt><dd>同正位，只是程度較輕。</dd></dl><p class="diff"><b>差異：</b>一致，是大阿爾克那中最一致的牌之一。Waite 甚至說逆位也只是「程度較輕」的好事。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c20">
+<figure><img src="cards/20.jpg" width="420" height="718" alt="Judgement（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">XX</span> 審判 <span class="en">Judgement</span></h3>
+<div class="tags"><span class="tag">覺醒</span><span class="tag">召喚</span><span class="tag">重生</span><span class="tag">總結</span></div>
+<h4>讀圖重點</h4><ul><li><b>吹響號角的天使</b>：號角上掛著紅十字旗，是一種召喚。</li><li><b>從棺木中站起的人們</b>：男人、女人與孩子張開雙臂回應召喚。</li><li><b>漂在水上的棺木</b>：從舊的狀態中被喚醒。</li><li><b>遠方的雪山</b>：常被連結到愚者牌背景的雪山，有人讀成旅人終於走到了那裡。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>覺醒、內在的召喚、重新評估自己、重生、做出關鍵決定、為過去做總結。</dd><dt class="rev">逆位</dt><dd>自我懷疑、對自己太嚴厲、忽略內心的召喚、遲遲不肯做決定。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>回顧過去的努力，找到真正想走的方向。</dd><dt>感情</dt><dd>重新評估關係；也可能是舊情復燃或釋懷。</dd><dt>建議</dt><dd>聽到內心的召喚了，就回應它。</dd></dl><p class="journey"><b>愚者之旅：</b>旅人聽見內在的召喚，徹底醒來。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>地位改變、更新、結果；另一說為因訴訟而全盤損失。</dd><dt>逆位</dt><dd>軟弱、怯懦、天真；也有深思、決定、判決。</dd></dl><p class="diff"><b>差異：</b>「更新、結果」與現代讀法接近。Waite 在圖像章節裡說，這個號角其實是「從我們內在響起的」，現代的「內在召喚」讀法就從這裡來。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c21">
+<figure><img src="cards/21.jpg" width="420" height="715" alt="The World（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3><span class="num">XXI</span> 世界 <span class="en">The World</span></h3>
+<div class="tags"><span class="tag">完成</span><span class="tag">圓滿</span><span class="tag">整合</span><span class="tag">新循環</span></div>
+<h4>讀圖重點</h4><ul><li><b>在月桂花環中跳舞的人</b>：舞動而不是靜止，代表圓滿是一種動態的和諧。</li><li><b>雙手各拿一根權杖</b>：與魔術師呼應，但魔術師只拿一根；在這裡，兩極已經整合。</li><li><b>綁著紅色緞帶的花環</b>：勝利、完成，也像一個循環。</li><li><b>四個角落的天使、老鷹、公牛、獅子</b>：與命運之輪相同，但這裡沒有書本了，課已經學完了。</li></ul>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>完成、圓滿、成就、整合、一個循環結束、準備展開新的旅程；也常指旅行或出國。</dd><dt class="rev">逆位</dt><dd>尚未完成、缺少收尾、想走捷徑；或遲遲不敢跨入下一個階段。</dd></dl>
+<h4>應用舉例</h4><dl class="apply"><dt>工作</dt><dd>專案完成、目標達成、獲得肯定。</dd><dt>感情</dt><dd>穩定圓滿的關係；或一段關係完滿地畫下句點。</dd><dt>建議</dt><dd>好好慶祝，然後準備下一段旅程。</dd></dl><p class="journey"><b>愚者之旅：</b>旅程的終點，也是下一輪的起點：旅人帶著所有經驗，又將變回愚者。</p><details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>確定的成功、報償、旅行、路途、移居、遠走、遷徙。</dd><dt>逆位</dt><dd>停滯、固著、不動、恆常。</dd></dl><p class="diff"><b>差異：</b>一致。「旅行、出國」這層意思從 Waite 的時代一直沿用至今。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article></section><section id="wands"><h2>權杖 <small>Wands · 火元素</small></h2><p class="lead">行動、熱情、事業企圖、創造力。權杖從頭到尾都帶著新芽，Waite 說這是「生命與活力」的花色。</p><article class="card" id="c22">
+<figure><img src="cards/22.jpg" width="420" height="746" alt="Ace of Wands（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>權杖一 <span class="en">Ace of Wands</span></h3>
+<div class="tags"><span class="tag">新的開始</span><span class="tag">靈感</span><span class="tag">熱情</span></div>
+<h4>讀圖重點</h4><p>一隻手從雲中伸出，緊握一根冒出新芽的權杖，遠方有一座城堡。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>新的計畫、靈感迸發、熱情、行動的起點、創造的潛力。</dd><dt class="rev">逆位</dt><dd>延遲、提不起勁、計畫胎死腹中。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>創造、發明、事業，以及促成這些的力量；原則、開端、源頭；出生、家族、起源；事業的起點；另一說為金錢、財富、遺產。</dd><dt>逆位</dt><dd>墮落、衰敗、毀滅；也有蒙上陰影的喜悅。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c23">
+<figure><img src="cards/23.jpg" width="420" height="714" alt="Two of Wands（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>權杖二 <span class="en">Two of Wands</span></h3>
+<div class="tags"><span class="tag">規劃</span><span class="tag">展望</span><span class="tag">抉擇</span></div>
+<h4>讀圖重點</h4><p>一個男人站在城堡高牆上，手捧地球儀，眺望遠方的海與陸地；一根權杖握在手中，另一根固定在牆上。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>規劃未來、展望、考慮踏出舒適圈、在兩條路之間做決定。</dd><dt class="rev">逆位</dt><dd>害怕未知、計畫不周、遲遲不敢出發。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>兩種讀法無法調和：一是財富、好運、壯麗；一是身體病痛、煩惱、悲傷、屈辱。Waite 說這像亞歷山大大帝坐擁天下，卻依然鬱鬱寡歡。</dd><dt>逆位</dt><dd>驚訝、驚奇、著迷、情緒波動、麻煩、恐懼。</dd></dl><p class="diff"><b>差異：</b>現代讀法取的是圖像「俯瞰天下、規劃下一步」的意思，Waite 那組矛盾的牌義大多被捨棄了。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c24">
+<figure><img src="cards/24.jpg" width="420" height="728" alt="Three of Wands（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>權杖三 <span class="en">Three of Wands</span></h3>
+<div class="tags"><span class="tag">拓展</span><span class="tag">遠見</span><span class="tag">等待成果</span></div>
+<h4>讀圖重點</h4><p>一個人背對我們站在崖邊，倚著一根權杖，遠望海上的船隻。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>拓展、向外發展、遠見、計畫已經啟動、等待成果回來。</dd><dt class="rev">逆位</dt><dd>計畫受挫、延誤、眼光太短淺。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>穩固的實力、事業、努力、貿易、商業、發現；海上那些船載著他的貨物。也代表事業上有力的合作。</dd><dt>逆位</dt><dd>困難結束、逆境與辛勞告一段落。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c25">
+<figure><img src="cards/25.jpg" width="420" height="718" alt="Four of Wands（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>權杖四 <span class="en">Four of Wands</span></h3>
+<div class="tags"><span class="tag">慶祝</span><span class="tag">安定</span><span class="tag">家</span></div>
+<h4>讀圖重點</h4><p>四根權杖架起花環，兩位女子高舉花束迎接，背後是城堡，像是一場慶典。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>慶祝、團聚、安定、家的溫暖、里程碑達成（例如搬新家、婚禮）。</dd><dt class="rev">逆位</dt><dd>慶祝延後、家中不和、過渡期的不安定。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>這次的意思幾乎就在表面：鄉間生活、避風港、豐收慶典、休息、和諧、繁榮、和平。</dd><dt>逆位</dt><dd>意思不變：繁榮、增長、幸福、美化。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c26">
+<figure><img src="cards/26.jpg" width="420" height="741" alt="Five of Wands（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>權杖五 <span class="en">Five of Wands</span></h3>
+<div class="tags"><span class="tag">競爭</span><span class="tag">衝突</span><span class="tag">磨合</span></div>
+<h4>讀圖重點</h4><p>五個年輕人各拿一根權杖互相揮舞，看起來比較像打鬧或比賽，而不是真正的廝殺。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>競爭、意見衝突、群體中的磨擦、良性的較勁。</dd><dt class="rev">逆位</dt><dd>避免衝突、衝突平息；或衝突轉為暗地裡的角力。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>模仿，例如模擬戰；也指追求財富的激烈競爭，連結到人生的戰鬥。因此也有人讀成黃金、獲利、富裕。</dd><dt>逆位</dt><dd>訴訟、爭執、詭計、矛盾。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c27">
+<figure><img src="cards/27.jpg" width="420" height="720" alt="Six of Wands（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>權杖六 <span class="en">Six of Wands</span></h3>
+<div class="tags"><span class="tag">勝利</span><span class="tag">肯定</span><span class="tag">凱旋</span></div>
+<h4>讀圖重點</h4><p>頭戴月桂冠的人騎著白馬，權杖上也掛著月桂花環，身旁的人群跟著他前進。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>勝利、公開的肯定、成功、自信、好消息。</dd><dt class="rev">逆位</dt><dd>不被認可、自尊受挫、驕傲過頭。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>勝利者凱旋；也是重大的好消息；期望如願以償，希望之冠。</dd><dt>逆位</dt><dd>憂慮、恐懼，像勝利的敵人兵臨城下；背叛、不忠，像有人打開城門迎敵；也有無限期延遲。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c28">
+<figure><img src="cards/28.jpg" width="420" height="729" alt="Seven of Wands（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>權杖七 <span class="en">Seven of Wands</span></h3>
+<div class="tags"><span class="tag">堅守</span><span class="tag">防衛</span><span class="tag">立場</span></div>
+<h4>讀圖重點</h4><p>一個男人站在高處，揮著權杖抵擋從下方伸上來的六根權杖。仔細看，他兩腳穿的鞋子不一樣，像是匆忙應戰。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>堅守立場、捍衛自己、以寡敵眾、面對挑戰不退縮。</dd><dt class="rev">逆位</dt><dd>招架不住、想放棄、被壓力擊垮。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>勇氣之牌：六個人攻擊一個，但他佔了有利位置。在思想上是爭論、口舌之爭；在商場上是談判、商戰、競爭。也是成功之牌。</dd><dt>逆位</dt><dd>困惑、窘境、焦慮；也是對猶豫不決的警告。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c29">
+<figure><img src="cards/29.jpg" width="420" height="713" alt="Eight of Wands（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>權杖八 <span class="en">Eight of Wands</span></h3>
+<div class="tags"><span class="tag">快速</span><span class="tag">進展</span><span class="tag">訊息</span></div>
+<h4>讀圖重點</h4><p>八根權杖在天空中斜斜飛過原野，畫面裡沒有任何人。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>快速進展、事情加速發生、消息傳來、行動迅速。</dd><dt class="rev">逆位</dt><dd>延誤、步調混亂、太急躁。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>事業上的行動力、迅速，像快遞使者；極大的急切與希望，朝著幸福終點前進；一切在移動中的事；也指愛神之箭。</dd><dt>逆位</dt><dd>嫉妒之箭、內部紛爭、良心不安、爭吵；已婚者的家庭爭執。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c30">
+<figure><img src="cards/30.jpg" width="420" height="735" alt="Nine of Wands（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>權杖九 <span class="en">Nine of Wands</span></h3>
+<div class="tags"><span class="tag">堅持</span><span class="tag">警戒</span><span class="tag">最後關頭</span></div>
+<h4>讀圖重點</h4><p>頭上包著繃帶的男人緊握權杖，警戒地看向一旁，身後八根權杖排成一道圍籬。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>堅持、韌性、受過傷仍不放棄、保持警戒、最後一哩路。</dd><dt class="rev">逆位</dt><dd>精疲力盡、過度防衛、想要放棄。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>對抗中的力量：受到攻擊時會勇敢迎戰，是個難纏的對手；伴隨延遲、暫停、延期。</dd><dt>逆位</dt><dd>阻礙、逆境、災禍。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c31">
+<figure><img src="cards/31.jpg" width="420" height="721" alt="Ten of Wands（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>權杖十 <span class="en">Ten of Wands</span></h3>
+<div class="tags"><span class="tag">重擔</span><span class="tag">責任</span><span class="tag">過勞</span></div>
+<h4>讀圖重點</h4><p>一個男人彎著腰，抱著十根權杖吃力地走向遠方的房子，權杖擋住了他的視線。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>負擔過重、責任太多、過勞、什麼都自己扛。</dd><dt class="rev">逆位</dt><dd>放下重擔、學會分配工作；或被壓垮。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>主要是壓迫；但也有好運、收穫、各種成功，而這些成功本身成了壓力。也是偽裝、背信之牌。</dd><dt>逆位</dt><dd>反對、困難、陰謀。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c32">
+<figure><img src="cards/32.jpg" width="420" height="729" alt="Page of Wands（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>權杖侍者 <span class="en">Page of Wands</span></h3>
+<div class="tags"><span class="tag">好奇</span><span class="tag">探索</span><span class="tag">消息</span></div>
+<h4>讀圖重點</h4><p>戴著羽毛帽的年輕人站在沙漠中，雙手扶著權杖，好奇地看著它的頂端。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>好奇心、探索新事物、熱情的開始、帶來好消息的人。</dd><dt class="rev">逆位</dt><dd>三分鐘熱度、缺乏方向、壞消息。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>黑髮青年，忠實、是戀人、使者或郵差；可能帶來家族的消息。</dd><dt>逆位</dt><dd>軼事、宣告、壞消息；也有猶豫不決與隨之而來的不穩定。</dd></dl><p class="diff"><b>差異：</b>Waite 時代習慣用宮廷牌代表特定外貌的人（例如權杖代表黑髮的人），現代讀法多半改讀成性格或狀態。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c33">
+<figure><img src="cards/33.jpg" width="420" height="714" alt="Knight of Wands（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>權杖騎士 <span class="en">Knight of Wands</span></h3>
+<div class="tags"><span class="tag">衝勁</span><span class="tag">冒險</span><span class="tag">急躁</span></div>
+<h4>讀圖重點</h4><p>騎士騎著前腳高舉的馬，衣服上有火蜥蜴的圖案，背景是金字塔。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>衝勁、熱情、冒險、說走就走、行動派。</dd><dt class="rev">逆位</dt><dd>衝動、魯莽、半途而廢、脾氣暴躁。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>出發、離去、逃離、移居；友善的黑髮青年；搬家。</dd><dt>逆位</dt><dd>決裂、分裂、中斷、不和。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c34">
+<figure><img src="cards/34.jpg" width="420" height="739" alt="Queen of Wands（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>權杖皇后 <span class="en">Queen of Wands</span></h3>
+<div class="tags"><span class="tag">自信</span><span class="tag">魅力</span><span class="tag">熱情</span></div>
+<h4>讀圖重點</h4><p>皇后坐在獅子裝飾的王座上，一手持權杖、一手拿向日葵，腳前坐著一隻黑貓。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>自信、溫暖、有魅力、獨立、充滿活力。</dd><dt class="rev">逆位</dt><dd>自我懷疑、嫉妒、脾氣火爆、苛求。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>黑髮女子、鄉村女子，友善、貞潔、有愛、可敬；也指愛財，或生意上的某種成功。</dd><dt>逆位</dt><dd>善良、節儉、樂於助人；在某些位置也代表反對、嫉妒，甚至欺騙與不忠。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c35">
+<figure><img src="cards/35.jpg" width="420" height="711" alt="King of Wands（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>權杖國王 <span class="en">King of Wands</span></h3>
+<div class="tags"><span class="tag">領導</span><span class="tag">願景</span><span class="tag">企業家</span></div>
+<h4>讀圖重點</h4><p>國王坐在飾有獅子與火蜥蜴的王座上，手持發芽的權杖，腳邊還有一隻小火蜥蜴。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>有遠見的領導者、企業家精神、大膽、果決、能鼓舞人心。</dd><dt class="rev">逆位</dt><dd>專橫、衝動、期待過高、不切實際。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>黑髮男子，友善、鄉下人，通常已婚，誠實正直。這張牌總是代表誠實，也可能帶來意外遺產的消息。</dd><dt>逆位</dt><dd>善良但嚴厲；嚴肅卻寬容。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article></section><section id="cups"><h2>聖杯 <small>Cups · 水元素</small></h2><p class="lead">情感、人際關係、直覺、想像。幾乎每張牌都有水，對應這個花色的元素。</p><article class="card" id="c36">
+<figure><img src="cards/36.jpg" width="420" height="730" alt="Ace of Cups（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>聖杯一 <span class="en">Ace of Cups</span></h3>
+<div class="tags"><span class="tag">新的感情</span><span class="tag">愛</span><span class="tag">滿溢</span></div>
+<h4>讀圖重點</h4><p>雲中伸出的手捧著聖杯，水從杯中四面湧出；一隻白鴿銜著聖餅降入杯中；下方是開滿睡蓮的池塘。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>新的感情、愛、喜悅、情感滿溢、同理心、直覺開啟。</dd><dt class="rev">逆位</dt><dd>情感壓抑、空虛、感情受阻。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>真心之家、喜悅、滿足、居所、滋養、豐盛、豐饒；聖桌。</dd><dt>逆位</dt><dd>虛偽之心的居所、變動、不穩定、劇變。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c37">
+<figure><img src="cards/37.jpg" width="420" height="712" alt="Two of Cups（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>聖杯二 <span class="en">Two of Cups</span></h3>
+<div class="tags"><span class="tag">結合</span><span class="tag">互相吸引</span><span class="tag">伙伴</span></div>
+<h4>讀圖重點</h4><p>一對年輕男女互相交換杯子，上方是赫密士雙蛇杖，杖頂有一個長著翅膀的獅子頭。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>兩人的結合、互相吸引、伙伴關係、彼此尊重與平衡。</dd><dt class="rev">逆位</dt><dd>關係失衡、分歧、溝通不良。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>愛、熱情、友誼、契合、結合、和諧、同情、兩性之間的關係。</dd><dt>逆位</dt><dd>—（原書未列）</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c38">
+<figure><img src="cards/38.jpg" width="420" height="743" alt="Three of Cups（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>聖杯三 <span class="en">Three of Cups</span></h3>
+<div class="tags"><span class="tag">友誼</span><span class="tag">慶祝</span><span class="tag">團聚</span></div>
+<h4>讀圖重點</h4><p>三位女子高舉杯子，像在乾杯、跳舞；腳邊是南瓜和葡萄等收成。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>友誼、慶祝、團聚、社群、分享喜悅。</dd><dt class="rev">逆位</dt><dd>過度玩樂、小圈圈、第三者介入。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>事情在豐盛、圓滿與歡樂中結束；好結果、勝利、實現、慰藉、療癒。</dd><dt>逆位</dt><dd>迅速、完成、結束；也指感官享樂過度。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c39">
+<figure><img src="cards/39.jpg" width="420" height="718" alt="Four of Cups（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>聖杯四 <span class="en">Four of Cups</span></h3>
+<div class="tags"><span class="tag">倦怠</span><span class="tag">冷淡</span><span class="tag">錯過</span></div>
+<h4>讀圖重點</h4><p>一個年輕人雙手抱胸坐在樹下，盯著面前三個杯子；雲中伸出一隻手遞上第四個杯子，他卻沒有理會。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>倦怠、提不起興趣、對現狀不滿、沒看見眼前的機會。</dd><dt class="rev">逆位</dt><dd>走出低潮、重新打起精神、願意接受新事物。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>厭倦、反感、嫌惡、想像出來的煩惱，像喝盡世間美酒只剩膩煩；有人遞上另一杯，像仙子的禮物，他卻看不出慰藉。</dd><dt>逆位</dt><dd>新奇、預感、新的指導、新的關係。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c40">
+<figure><img src="cards/40.jpg" width="420" height="734" alt="Five of Cups（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>聖杯五 <span class="en">Five of Cups</span></h3>
+<div class="tags"><span class="tag">失落</span><span class="tag">遺憾</span><span class="tag">還有希望</span></div>
+<h4>讀圖重點</h4><p>披著黑斗篷的人低頭看著三個倒下的杯子，沒注意到身後還有兩個立著；遠方有一座橋通往城堡。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>失落、悲傷、遺憾、只看見失去的部分。</dd><dt class="rev">逆位</dt><dd>接受失去、走出悲傷、開始看見還擁有的。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>失去之牌，但仍有剩餘：倒了三個，還有兩個；遺產、傳承，但不如預期；有人讀成帶著苦澀的婚姻。</dd><dt>逆位</dt><dd>消息、結盟、親緣、血緣、祖先、歸來、不實的計畫。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c41">
+<figure><img src="cards/41.jpg" width="420" height="717" alt="Six of Cups（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>聖杯六 <span class="en">Six of Cups</span></h3>
+<div class="tags"><span class="tag">回憶</span><span class="tag">童年</span><span class="tag">單純</span></div>
+<h4>讀圖重點</h4><p>一個小男孩把插滿白花的杯子遞給小女孩，背景是古老的村落庭院。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>懷舊、童年回憶、單純的善意、舊識重逢。</dd><dt class="rev">逆位</dt><dd>活在過去、走不出回憶；或開始向前看。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>過去與回憶之牌，回首童年；來自過去的快樂；已消逝的事物。另一說則相反：新的關係、新的知識、新的環境。</dd><dt>逆位</dt><dd>未來、更新、即將發生的事。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c42">
+<figure><img src="cards/42.jpg" width="420" height="746" alt="Seven of Cups（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>聖杯七 <span class="en">Seven of Cups</span></h3>
+<div class="tags"><span class="tag">幻想</span><span class="tag">選擇太多</span><span class="tag">白日夢</span></div>
+<h4>讀圖重點</h4><p>一個黑色剪影面對雲中的七個杯子，杯裡分別是人頭、蒙面發光的人、蛇、城堡、珠寶、月桂花環和一條龍。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>選擇太多、幻想、白日夢、看不清哪個才是真的。</dd><dt class="rev">逆位</dt><dd>看清現實、做出選擇、擺脫幻想。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>仙子的恩賜、倒影、情感、想像，在沉思之鏡中看見的事物；有些成就，但都不持久、不實在。</dd><dt>逆位</dt><dd>渴望、意志、決心、計畫。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c43">
+<figure><img src="cards/43.jpg" width="420" height="728" alt="Eight of Cups（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>聖杯八 <span class="en">Eight of Cups</span></h3>
+<div class="tags"><span class="tag">離開</span><span class="tag">尋找更深的意義</span></div>
+<h4>讀圖重點</h4><p>穿紅衣的人拄著杖，在夜色中背對八個疊好的杯子，走向遠方的山；疊好的杯子中間缺了一個。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>離開、放下不再滿足你的事物、尋找更深的意義。</dd><dt class="rev">逆位</dt><dd>想走卻不敢走、在留下與離開之間猶豫。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>一個沮喪的人離開他的幸福之杯、事業，或原本在意的事。也有完全相反的讀法：喜悅、溫和、羞怯、榮譽、謙遜。實際上通常表示事情的衰退，或原以為重要的事其實無足輕重。</dd><dt>逆位</dt><dd>極大的喜悅、幸福、宴樂。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c44">
+<figure><img src="cards/44.jpg" width="420" height="730" alt="Nine of Cups（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>聖杯九 <span class="en">Nine of Cups</span></h3>
+<div class="tags"><span class="tag">心願達成</span><span class="tag">滿足</span></div>
+<h4>讀圖重點</h4><p>一個男人滿足地抱胸坐著，背後一排藍布鋪著的架子上擺著九個杯子。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>心願達成、滿足、享受、自得其樂。常被稱為「願望牌」。</dd><dt class="rev">逆位</dt><dd>過度放縱、得到了卻不滿足、自滿。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>和諧、滿足、身體上的舒適；也有勝利、成功、優勢；問卜者的滿意。</dd><dt>逆位</dt><dd>真實、忠誠、自由；但說法不一，也包括錯誤與不完美。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c45">
+<figure><img src="cards/45.jpg" width="420" height="709" alt="Ten of Cups（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>聖杯十 <span class="en">Ten of Cups</span></h3>
+<div class="tags"><span class="tag">幸福家庭</span><span class="tag">圓滿</span></div>
+<h4>讀圖重點</h4><p>一對夫妻張開雙臂迎向彩虹上的十個杯子，兩個孩子在一旁跳舞，遠方是他們的家。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>家庭幸福、情感圓滿、和諧、長久的快樂。</dd><dt class="rev">逆位</dt><dd>家庭不和、理想與現實落差、表面和樂。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>滿足、整顆心的安寧與它的圓滿；人間愛與友誼的完美；與多張宮廷牌同時出現時，代表會照顧問卜者利益的人；也指問卜者居住的城鎮或國家。</dd><dt>逆位</dt><dd>虛偽之心的安寧、憤慨、暴力。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c46">
+<figure><img src="cards/46.jpg" width="420" height="738" alt="Page of Cups（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>聖杯侍者 <span class="en">Page of Cups</span></h3>
+<div class="tags"><span class="tag">敏感</span><span class="tag">創意</span><span class="tag">好消息</span></div>
+<h4>讀圖重點</h4><p>穿花紋衣服的年輕人站在海邊，手上的杯子裡探出一條小魚，他正看著牠。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>敏感、想像力、創意的萌芽、天真的心意、感情上的好消息。</dd><dt class="rev">逆位</dt><dd>情緒化、不成熟、白日夢。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>金髮青年，樂於服務，會和問卜者有所關聯；用功的年輕人；消息、訊息；專注、反思、冥想，也指這些事用在生意上。</dd><dt>逆位</dt><dd>喜好、傾向、依戀、誘惑、欺騙、詭計。</dd></dl><p class="diff"><b>差異：</b>Waite 說杯中探出的魚，是「心中的畫面正在成形」，這也是現代「創意、想像」讀法的來源。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c47">
+<figure><img src="cards/47.jpg" width="420" height="721" alt="Knight of Cups（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>聖杯騎士 <span class="en">Knight of Cups</span></h3>
+<div class="tags"><span class="tag">浪漫</span><span class="tag">邀請</span><span class="tag">追隨內心</span></div>
+<h4>讀圖重點</h4><p>戴著有翅膀頭盔的騎士，騎著白馬緩緩前進，手中捧著杯子，前方是一條河。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>浪漫、追求、邀請、提案、跟著感覺走。</dd><dt class="rev">逆位</dt><dd>不切實際、情緒善變、甜言蜜語。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>到來、接近，有時是使者的到來；提議、追求、邀請、鼓動。</dd><dt>逆位</dt><dd>詭計、手段、狡猾、詐騙、表裡不一、欺詐。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c48">
+<figure><img src="cards/48.jpg" width="420" height="730" alt="Queen of Cups（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>聖杯皇后 <span class="en">Queen of Cups</span></h3>
+<div class="tags"><span class="tag">同理</span><span class="tag">溫柔</span><span class="tag">直覺</span></div>
+<h4>讀圖重點</h4><p>皇后坐在海邊的王座上，專注地凝視手中一個有蓋、裝飾華麗的杯子。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>同理心、溫柔、直覺敏銳、情緒穩定、善於照顧人。</dd><dt class="rev">逆位</dt><dd>情緒失衡、過度犧牲、依賴他人。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>善良的金髮女子；誠實、忠誠，會幫助問卜者；有愛的智慧，因而有預見的能力；成功、幸福、愉悅；智慧、德行；完美的伴侶與好母親。</dd><dt>逆位</dt><dd>說法不一：好女人；或出眾卻不可信任的女人；乖張的女人；惡習、不名譽。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c49">
+<figure><img src="cards/49.jpg" width="420" height="714" alt="King of Cups（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>聖杯國王 <span class="en">King of Cups</span></h3>
+<div class="tags"><span class="tag">成熟</span><span class="tag">情緒穩定</span><span class="tag">包容</span></div>
+<h4>讀圖重點</h4><p>國王坐在漂浮於海面的石座上，手持杯子與權杖；背景一邊有船，一邊有魚躍出水面。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>情緒成熟、穩重、包容、外交手腕、在情感與理智間取得平衡。</dd><dt class="rev">逆位</dt><dd>壓抑情緒、情緒勒索、喜怒無常。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>金髮男子，商人、法律或神學界人士；負責任、願意幫助問卜者；也指公正、藝術與科學，以及從事這些的人；創造性的智慧。</dd><dt>逆位</dt><dd>不誠實、兩面手法的人；詐騙、勒索、不公、惡習、醜聞、掠奪、重大損失。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article></section><section id="swords"><h2>寶劍 <small>Swords · 風元素</small></h2><p class="lead">思考、溝通、衝突、決斷。這個花色最多困難的牌，Waite 也說寶劍「一般不象徵對人事有益的力量」。</p><article class="card" id="c50">
+<figure><img src="cards/50.jpg" width="420" height="734" alt="Ace of Swords（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>寶劍一 <span class="en">Ace of Swords</span></h3>
+<div class="tags"><span class="tag">清晰</span><span class="tag">突破</span><span class="tag">真相</span></div>
+<h4>讀圖重點</h4><p>雲中伸出的手握著直立的寶劍，劍尖穿過一頂王冠，冠上垂著橄欖枝與棕櫚葉。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>思路清晰、突破、真相大白、新的想法、果斷的決定。</dd><dt class="rev">逆位</dt><dd>思緒混亂、判斷錯誤、溝通不良。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>勝利、一切事物的極致、征服、力量的勝利。在愛與恨上都是極強大的牌。</dd><dt>逆位</dt><dd>同正位，但結果是災難性的；另一說為受孕、生育、增加、繁多。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c51">
+<figure><img src="cards/51.jpg" width="420" height="717" alt="Two of Swords（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>寶劍二 <span class="en">Two of Swords</span></h3>
+<div class="tags"><span class="tag">僵局</span><span class="tag">逃避</span><span class="tag">難以抉擇</span></div>
+<h4>讀圖重點</h4><p>蒙著眼的白衣女子坐在海邊，雙臂交叉在胸前，各舉一把劍；天上有一彎新月。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>僵局、難以抉擇、逃避面對、刻意保持中立。</dd><dt class="rev">逆位</dt><dd>資訊過多、終於做出決定；或更加混亂。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>順從以及它帶來的平衡、勇氣、友誼、武裝中的和諧；另一讀法是溫柔、情感、親密。但這些正面讀法要保留看待，因為寶劍一般不象徵對人事有益的力量。</dd><dt>逆位</dt><dd>冒充、謊言、表裡不一、不忠。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c52">
+<figure><img src="cards/52.jpg" width="420" height="728" alt="Three of Swords（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>寶劍三 <span class="en">Three of Swords</span></h3>
+<div class="tags"><span class="tag">心碎</span><span class="tag">悲傷</span><span class="tag">痛苦的真相</span></div>
+<h4>讀圖重點</h4><p>一顆紅心被三把劍刺穿，背後是烏雲與雨。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>心碎、悲傷、分離、令人痛苦的真相。</dd><dt class="rev">逆位</dt><dd>從傷痛中復原、釋懷；或把痛苦壓在心裡。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>遷移、缺席、延遲、分裂、破裂、離散，以及圖像本身明顯表達的一切，簡單到不需要一一列舉。</dd><dt>逆位</dt><dd>精神錯亂、錯誤、損失、分心、失序、混亂。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c53">
+<figure><img src="cards/53.jpg" width="420" height="714" alt="Four of Swords（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>寶劍四 <span class="en">Four of Swords</span></h3>
+<div class="tags"><span class="tag">休息</span><span class="tag">恢復</span><span class="tag">暫停</span></div>
+<h4>讀圖重點</h4><p>一尊騎士雕像雙手合十，躺在石棺上；牆上掛著三把劍，棺側還有一把；左上角是彩繪玻璃窗。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>休息、養精蓄銳、暫時退出、沉澱、從壓力中恢復。</dd><dt class="rev">逆位</dt><dd>過勞、不肯休息；或休息夠了、準備重新出發。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>警戒、退隱、孤獨、隱士般的休息、流放、墳墓與棺木。</dd><dt>逆位</dt><dd>明智的管理、審慎、節約、貪婪、預防、遺囑。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c54">
+<figure><img src="cards/54.jpg" width="420" height="738" alt="Five of Swords（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>寶劍五 <span class="en">Five of Swords</span></h3>
+<div class="tags"><span class="tag">不擇手段</span><span class="tag">慘勝</span><span class="tag">衝突</span></div>
+<h4>讀圖重點</h4><p>一個男人得意地抱著三把劍，看著兩個垂頭喪氣離開的人，地上還丟著兩把劍；天空的雲又碎又亂。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>衝突、不擇手段的勝利、贏了面子輸了裡子、鬧翻。</dd><dt class="rev">逆位</dt><dd>和解、放下爭執；或心中仍有怨恨。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>墮落、毀滅、撤銷、惡名、不名譽、損失，以及類似的變化。</dd><dt>逆位</dt><dd>同正位；葬禮與喪事。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c55">
+<figure><img src="cards/55.jpg" width="420" height="718" alt="Six of Swords（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>寶劍六 <span class="en">Six of Swords</span></h3>
+<div class="tags"><span class="tag">過渡</span><span class="tag">離開</span><span class="tag">前往平靜</span></div>
+<h4>讀圖重點</h4><p>船夫撐著小船，載著披斗篷的人和孩子前往對岸，船上插著六把劍；靠近船的一側水面有波紋，前方較平靜。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>過渡、離開困境、前往較平靜的地方、慢慢往前走。</dd><dt class="rev">逆位</dt><dd>無法離開、困在原地、舊問題跟著走。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>水路旅行、路線、道路、使者、權宜之計。</dd><dt>逆位</dt><dd>宣告、坦白、公開；一說是求愛。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c56">
+<figure><img src="cards/56.jpg" width="420" height="738" alt="Seven of Swords（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>寶劍七 <span class="en">Seven of Swords</span></h3>
+<div class="tags"><span class="tag">偷偷摸摸</span><span class="tag">策略</span><span class="tag">欺瞞</span></div>
+<h4>讀圖重點</h4><p>一個男人躡手躡腳地抱走五把劍，回頭望著後方的營帳，地上還留著兩把。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>欺瞞、偷偷摸摸、耍心機、另闢蹊徑、獨自行動。</dd><dt class="rev">逆位</dt><dd>良心不安、坦白、計畫被識破。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>計畫、嘗試、願望、希望、自信；也有爭吵、可能失敗的計畫、煩惱。這張牌的含義不確定，因為各種解釋差異很大。</dd><dt>逆位</dt><dd>好的建議、忠告、指導、誹謗、閒言閒語。</dd></dl><p class="diff"><b>差異：</b>差異明顯。Waite 的牌義偏中性甚至正面，還說這張含義「不確定」；現代讀法則幾乎都從圖像讀成欺瞞與心機。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c57">
+<figure><img src="cards/57.jpg" width="420" height="716" alt="Eight of Swords（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>寶劍八 <span class="en">Eight of Swords</span></h3>
+<div class="tags"><span class="tag">受困</span><span class="tag">自我設限</span></div>
+<h4>讀圖重點</h4><p>一位女子被蒙住眼睛、綁住身體，站在八把劍圍成的圈中；但劍並沒有完全圍住她，腳下是水窪。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>受困、無力感、自我設限、覺得沒有出路（其實有）。</dd><dt class="rev">逆位</dt><dd>開始掙脫、看清處境、找回力量。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>壞消息、強烈的懊惱、危機、指責、受束縛的力量、衝突、誹謗；也有疾病。Waite 強調這是「暫時的拘禁」，不是無法挽回的束縛。</dd><dt>逆位</dt><dd>不安、困難、反對、意外、背叛；意料之外的事；宿命。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c58">
+<figure><img src="cards/58.jpg" width="420" height="747" alt="Nine of Swords（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>寶劍九 <span class="en">Nine of Swords</span></h3>
+<div class="tags"><span class="tag">焦慮</span><span class="tag">失眠</span><span class="tag">惡夢</span></div>
+<h4>讀圖重點</h4><p>一個人從床上坐起，雙手掩面；黑暗的牆上橫掛著九把劍；被子上有玫瑰與星座符號。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>焦慮、失眠、惡夢、過度擔心、內疚。很多恐懼其實發生在自己腦中。</dd><dt class="rev">逆位</dt><dd>走出焦慮、開始求助；或焦慮到了頂點。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>死亡、失敗、流產、延遲、欺騙、失望、絕望。Waite 說這是「徹底荒涼」之牌。</dd><dt>逆位</dt><dd>監禁、懷疑、疑慮、合理的恐懼、羞恥。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c59">
+<figure><img src="cards/59.jpg" width="420" height="721" alt="Ten of Swords（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>寶劍十 <span class="en">Ten of Swords</span></h3>
+<div class="tags"><span class="tag">谷底</span><span class="tag">結束</span><span class="tag">最壞已過去</span></div>
+<h4>讀圖重點</h4><p>一個人臉朝下趴在地上，背上插著十把劍；天空漆黑，但遠方地平線已經露出黃色的曙光。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>谷底、痛苦的結束、被背叛的感覺；但最壞的已經過去，接下來只會往上。</dd><dt class="rev">逆位</dt><dd>慢慢復原、從谷底爬起；或不肯讓事情結束。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>圖像所表達的一切；也有痛苦、苦難、淚水、悲傷、荒涼。Waite 特別說它不特指暴力死亡。</dd><dt>逆位</dt><dd>好處、利益、成功、恩惠，但都不持久；也有權力與權威。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c60">
+<figure><img src="cards/60.jpg" width="420" height="734" alt="Page of Swords（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>寶劍侍者 <span class="en">Page of Swords</span></h3>
+<div class="tags"><span class="tag">好奇</span><span class="tag">機警</span><span class="tag">求知</span></div>
+<h4>讀圖重點</h4><p>年輕人雙手舉劍，站在崎嶇的高地上，頭髮被風吹起，警覺地看向一旁。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>好奇、機警、求知慾、觀察力強、想到就說。</dd><dt class="rev">逆位</dt><dd>說話不經大腦、八卦、空有想法沒有行動。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>權威、監督、秘密任務、警戒、刺探、審查，以及這些相關的特質。</dd><dt>逆位</dt><dd>這些特質較惡的一面；意料之外、毫無準備；也暗示疾病。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c61">
+<figure><img src="cards/61.jpg" width="420" height="712" alt="Knight of Swords（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>寶劍騎士 <span class="en">Knight of Swords</span></h3>
+<div class="tags"><span class="tag">衝鋒</span><span class="tag">果斷</span><span class="tag">直接</span></div>
+<h4>讀圖重點</h4><p>騎士揮著劍，騎著白馬全速衝鋒，雲和樹都被風吹向同一個方向。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>果斷、行動迅速、直來直往、為理念衝鋒陷陣。</dd><dt class="rev">逆位</dt><dd>衝動、魯莽、說話傷人、不顧後果。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>技能、勇敢、能力、防衛、應對、敵意、憤怒、戰爭、毀滅、反對、抵抗、毀壞。與其他凶牌相鄰時，也可能代表死亡。</dd><dt>逆位</dt><dd>輕率、無能、浪費。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c62">
+<figure><img src="cards/62.jpg" width="420" height="745" alt="Queen of Swords（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>寶劍皇后 <span class="en">Queen of Swords</span></h3>
+<div class="tags"><span class="tag">清醒</span><span class="tag">獨立</span><span class="tag">直言</span></div>
+<h4>讀圖重點</h4><p>皇后側坐在王座上，右手直舉寶劍，左手向前伸出；Waite 說她的神情「嚴厲，但經歷過悲傷」。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>清醒理性、獨立、直言不諱、看得透徹、從經驗中淬鍊出的智慧。</dd><dt class="rev">逆位</dt><dd>冷漠、刻薄、過度批判、拒人於千里之外。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>守寡、女性的悲傷與困窘、缺席、不孕、哀悼、匱乏、分離。</dd><dt>逆位</dt><dd>惡意、偏執、詭計、假正經、災禍、欺騙。</dd></dl><p class="diff"><b>差異：</b>Waite 的牌義集中在悲傷與失去；現代讀法則把「經歷過悲傷」轉化成「清醒、獨立」。</p></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c63">
+<figure><img src="cards/63.jpg" width="420" height="716" alt="King of Swords（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>寶劍國王 <span class="en">King of Swords</span></h3>
+<div class="tags"><span class="tag">理性</span><span class="tag">權威</span><span class="tag">判斷</span></div>
+<h4>讀圖重點</h4><p>國王正面端坐，手持寶劍，背後的王座上有蝴蝶圖案。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>理性、權威、公正的判斷、專業、邏輯清楚。</dd><dt class="rev">逆位</dt><dd>濫用權力、冷酷、操弄、獨斷。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>一切出自「審判」這個概念的事：權力、命令、權威、好戰的智慧、法律、官職等等。</dd><dt>逆位</dt><dd>殘忍、乖張、野蠻、背信、惡意。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article></section><section id="pentacles"><h2>錢幣 <small>Pentacles · 土元素</small></h2><p class="lead">金錢、工作、身體、實際的物質生活。原本叫 Coins（錢幣），Waite 改成刻了五芒星的圓盤。</p><article class="card" id="c64">
+<figure><img src="cards/64.jpg" width="420" height="730" alt="Ace of Pentacles（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>錢幣一 <span class="en">Ace of Pentacles</span></h3>
+<div class="tags"><span class="tag">新機會</span><span class="tag">財富</span><span class="tag">實際的開始</span></div>
+<h4>讀圖重點</h4><p>雲中伸出的手托著一枚錢幣，下方是百合盛開的花園，一道樹籬拱門通往遠方的山。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>新的財務或工作機會、實際的開始、物質上的富足、穩固的基礎。</dd><dt class="rev">逆位</dt><dd>錯失機會、財務計畫不周、守不住財。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>完美的滿足、幸福、狂喜；也有迅速的消息；黃金。</dd><dt>逆位</dt><dd>財富的惡面、壞消息；也指巨大的財富。無論如何都表示物質富足，只是對擁有者是否有益，要看正逆位。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c65">
+<figure><img src="cards/65.jpg" width="420" height="718" alt="Two of Pentacles（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>錢幣二 <span class="en">Two of Pentacles</span></h3>
+<div class="tags"><span class="tag">平衡</span><span class="tag">兼顧</span><span class="tag">應變</span></div>
+<h4>讀圖重點</h4><p>戴高帽的年輕人邊跳舞邊拋接兩枚錢幣，兩枚錢幣被一條 ∞ 形的帶子連在一起；背後的海浪上有船在起伏。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>兼顧多件事、平衡收支、靈活應變、在變動中保持節奏。</dd><dt class="rev">逆位</dt><dd>手忙腳亂、顧此失彼、財務失衡。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>一方面是歡樂、娛樂，這也是圖像所畫的主題；另一方面也讀成書面消息、阻礙、焦躁、麻煩、糾纏。</dd><dt>逆位</dt><dd>強顏歡笑、假裝享受、字面意義、筆跡、文章、匯票。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c66">
+<figure><img src="cards/66.jpg" width="420" height="742" alt="Three of Pentacles（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>錢幣三 <span class="en">Three of Pentacles</span></h3>
+<div class="tags"><span class="tag">合作</span><span class="tag">專業</span><span class="tag">被肯定</span></div>
+<h4>讀圖重點</h4><p>一位工匠站在教堂裡的長凳上工作，旁邊一位修士和一位拿著設計圖的人正與他討論；拱門上刻著三枚錢幣。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>團隊合作、專業技能、被肯定、按部就班建立成果。</dd><dt class="rev">逆位</dt><dd>合作不順、品質不佳、缺乏團隊精神。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>職業、手藝、技術勞動；但通常被視為高貴、貴族、名聲、榮耀之牌。</dd><dt>逆位</dt><dd>平庸（在工作或其他方面）、幼稚、瑣碎、軟弱。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c67">
+<figure><img src="cards/67.jpg" width="420" height="722" alt="Four of Pentacles（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>錢幣四 <span class="en">Four of Pentacles</span></h3>
+<div class="tags"><span class="tag">守財</span><span class="tag">控制</span><span class="tag">安全感</span></div>
+<h4>讀圖重點</h4><p>戴王冠的人緊緊抱住一枚錢幣，頭上頂著一枚，腳下踩著兩枚，背後是城市。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>守住擁有的、重視安全感、存錢；也可能過於保守、吝嗇、控制。</dd><dt class="rev">逆位</dt><dd>放手、慷慨；或財務失控、揮霍。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>財產的保障、緊抓擁有之物、贈與、遺贈、遺產。</dd><dt>逆位</dt><dd>懸而未決、延遲、反對。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c68">
+<figure><img src="cards/68.jpg" width="420" height="721" alt="Five of Pentacles（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>錢幣五 <span class="en">Five of Pentacles</span></h3>
+<div class="tags"><span class="tag">困頓</span><span class="tag">匱乏</span><span class="tag">被排除在外</span></div>
+<h4>讀圖重點</h4><p>兩個衣衫襤褸的人在風雪中走過，一人拄著柺杖；他們身旁是一扇亮著燈的彩繪玻璃窗，上面有五枚錢幣，他們卻沒有看見。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>經濟困難、匱乏、身心困頓、覺得被排除在外。</dd><dt class="rev">逆位</dt><dd>度過難關、開始復原、願意接受幫助。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>首先預示物質上的困難，可能就是圖上畫的貧困，也可能是其他形式。對某些占卜者來說，卻是愛與戀人之牌。兩種讀法無法調和。</dd><dt>逆位</dt><dd>失序、混亂、毀滅、不和、放蕩。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c69">
+<figure><img src="cards/69.jpg" width="420" height="707" alt="Six of Pentacles（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>錢幣六 <span class="en">Six of Pentacles</span></h3>
+<div class="tags"><span class="tag">給予</span><span class="tag">接受</span><span class="tag">分享</span></div>
+<h4>讀圖重點</h4><p>一位商人手持天秤，把錢幣施捨給跪在地上的兩個乞丐之一。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>給予與接受、慷慨、分享資源、互助、公平交換。</dd><dt class="rev">逆位</dt><dd>施恩不公、附帶條件的幫助、債務問題。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>禮物、餽贈、滿足；另一說為留意、警覺；現在正是時候、眼前的興旺。</dd><dt>逆位</dt><dd>慾望、貪婪、嫉妒、羨慕、幻想。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c70">
+<figure><img src="cards/70.jpg" width="420" height="742" alt="Seven of Pentacles（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>錢幣七 <span class="en">Seven of Pentacles</span></h3>
+<div class="tags"><span class="tag">耐心</span><span class="tag">評估</span><span class="tag">等待收成</span></div>
+<h4>讀圖重點</h4><p>年輕農夫倚著鋤頭，凝視藤蔓上結出的七枚錢幣。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>耐心等待、評估成果、長期投資、停下來看看努力有沒有方向。</dd><dt class="rev">逆位</dt><dd>沒耐心、努力沒有回報、投資方向錯誤。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>說法極其矛盾：主要是金錢、生意、交易之牌；但一說是爭執、吵架，另一說是天真、巧思、淨化。</dd><dt>逆位</dt><dd>擔心打算借出去的錢。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c71">
+<figure><img src="cards/71.jpg" width="420" height="727" alt="Eight of Pentacles（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>錢幣八 <span class="en">Eight of Pentacles</span></h3>
+<div class="tags"><span class="tag">專注</span><span class="tag">磨練</span><span class="tag">精進</span></div>
+<h4>讀圖重點</h4><p>一位工匠坐在長凳上，專心地在錢幣上雕刻；已完成的六枚掛在柱子上，還有一枚放在地上。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>專注工作、磨練技藝、精益求精、學徒精神。</dd><dt class="rev">逆位</dt><dd>缺乏熱情、敷衍了事、完美主義過頭。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>工作、受雇、委託、手藝、技術與生意上的技能，或許還在準備階段。</dd><dt>逆位</dt><dd>落空的野心、虛榮、貪婪、勒索、放高利貸；也指聰明才智被用在狡詐與陰謀上。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c72">
+<figure><img src="cards/72.jpg" width="420" height="730" alt="Nine of Pentacles（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>錢幣九 <span class="en">Nine of Pentacles</span></h3>
+<div class="tags"><span class="tag">獨立</span><span class="tag">富足</span><span class="tag">自我實現</span></div>
+<h4>讀圖重點</h4><p>一位衣著華美的女子站在結滿葡萄的花園中，手上停著一隻戴頭罩的鳥，身旁有九枚錢幣。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>獨立、靠自己達成的富足、享受成果、自信、優雅的生活。</dd><dt class="rev">逆位</dt><dd>過度依賴物質、財務不穩、為了物質犧牲自由。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>謹慎、安全、成功、成就、確定、洞察力。</dd><dt>逆位</dt><dd>詐騙、欺騙、落空的計畫、背信。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c73">
+<figure><img src="cards/73.jpg" width="420" height="722" alt="Ten of Pentacles（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>錢幣十 <span class="en">Ten of Pentacles</span></h3>
+<div class="tags"><span class="tag">家族</span><span class="tag">傳承</span><span class="tag">長久的財富</span></div>
+<h4>讀圖重點</h4><p>拱門下有一對男女和一個孩子，前景坐著一位老人，身邊有兩隻狗；十枚錢幣排成一個圖形，背後是城堡與家徽。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>家族、傳承、長久的財富、穩固的基礎、世代的連結。</dd><dt class="rev">逆位</dt><dd>家族紛爭、遺產問題、財務損失。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>收穫、財富；家族事務、檔案、血統、家族的住所。</dd><dt>逆位</dt><dd>機運、宿命、損失、竊盜、賭博；有時是禮物、嫁妝、年金。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c74">
+<figure><img src="cards/74.jpg" width="420" height="740" alt="Page of Pentacles（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>錢幣侍者 <span class="en">Page of Pentacles</span></h3>
+<div class="tags"><span class="tag">學習</span><span class="tag">踏實</span><span class="tag">新目標</span></div>
+<h4>讀圖重點</h4><p>年輕人站在原野上，雙手捧起一枚錢幣，專注地看著它。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>學習、腳踏實地、新的目標或計畫、對實際事物感興趣。</dd><dt class="rev">逆位</dt><dd>缺乏進度、拖延、不切實際。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>專注、學習、學問、反思；另一說為消息、訊息和帶來消息的人；也有規則、管理。</dd><dt>逆位</dt><dd>揮霍、放蕩、慷慨、奢侈；不好的消息。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c75">
+<figure><img src="cards/75.jpg" width="420" height="717" alt="Knight of Pentacles（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>錢幣騎士 <span class="en">Knight of Pentacles</span></h3>
+<div class="tags"><span class="tag">穩健</span><span class="tag">負責</span><span class="tag">按部就班</span></div>
+<h4>讀圖重點</h4><p>騎士騎在一匹靜止不動的壯碩黑馬上，手托錢幣，前方是耕好的田地。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>穩健、勤勉、負責、按部就班、可靠。</dd><dt class="rev">逆位</dt><dd>停滯、死板、無聊、過度謹慎。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>有用、可靠、利益、責任、正直，都在一般外在的層面上。</dd><dt>逆位</dt><dd>惰性、懶散、那種靜止的休息、停滯；也有平靜、沮喪、粗心。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c76">
+<figure><img src="cards/76.jpg" width="420" height="728" alt="Queen of Pentacles（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>錢幣皇后 <span class="en">Queen of Pentacles</span></h3>
+<div class="tags"><span class="tag">務實</span><span class="tag">照顧</span><span class="tag">豐盛</span></div>
+<h4>讀圖重點</h4><p>皇后坐在玫瑰花架下的王座上，雙手捧著膝上的錢幣；右下角有一隻兔子。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>務實、會照顧人、經濟獨立、把生活打理得豐盛舒適。</dd><dt class="rev">逆位</dt><dd>過度操勞、只顧別人忘了自己、物質上的不安全感。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>富裕、慷慨、壯麗、安全、自由。</dd><dt>逆位</dt><dd>邪惡、懷疑、懸而未決、恐懼、不信任。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article><article class="card" id="c77">
+<figure><img src="cards/77.jpg" width="420" height="711" alt="King of Pentacles（1909 原版）" decoding="async"></figure>
+<div class="body">
+<h3>錢幣國王 <span class="en">King of Pentacles</span></h3>
+<div class="tags"><span class="tag">成功</span><span class="tag">穩定</span><span class="tag">富足</span></div>
+<h4>讀圖重點</h4><p>國王坐在飾有牛頭的王座上，長袍上滿是葡萄藤，手持錢幣與權杖，背後是城堡。</p>
+<h4>現代牌義</h4>
+<dl class="meaning"><dt class="up">正位</dt><dd>事業有成、財務穩定、可靠的領導者、善於經營。</dd><dt class="rev">逆位</dt><dd>貪婪、固執、只看重錢、財務決策失當。</dd></dl>
+<details class="waite"><summary>Waite 原意（1910）</summary>
+<dl><dt>正位</dt><dd>勇氣、務實的智慧、生意與一般的智力天賦，有時是數學方面的才能；在這些方面的成功。</dd><dt>逆位</dt><dd>惡習、軟弱、醜陋、乖張、腐敗、危險。</dd></dl></details>
+<a class="top" href="#overview">回到總覽 ↑</a>
+</div></article></section></main><footer id="sources">
+<h2>來源</h2>
+<ul>
+<li><b>牌面</b>：1909 年原版 Rider–Waite–Smith 塔羅（「Roses &amp; Lilies」版），繪者 Pamela Colman Smith。收藏者 Saskia Jansen 的實體牌掃描，取自維基共享資源（Wikimedia Commons）分類「Rider-Waite tarot deck (Roses &amp; Lilies)」，標示為公有領域。</li>
+<li><b>Waite 原意</b>：A. E. Waite，《The Pictorial Key to the Tarot》（1910），第三部 §2–3；取自維基文庫（Wikisource），中文為本講義翻譯。</li>
+<li><b>現代牌義、讀圖說明、應用舉例</b>：依主流塔羅讀法整理撰寫，僅供學習參考。</li>
+</ul>
+</footer><script>
+(function(){
+  var ids=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77], btn=document.getElementById('drawBtn');
+  btn.addEventListener('click',function(){
+    var i=ids[Math.floor(Math.random()*ids.length)], el=document.getElementById('c'+i);
+    if(!el) return;
+    var rev=Math.random()<0.5;
+    document.querySelectorAll('.card.drawn').forEach(function(e){e.classList.remove('drawn','reversed')});
+    el.classList.add('drawn'); if(rev) el.classList.add('reversed');
+    el.scrollIntoView({behavior:'smooth',block:'start'});
+    var t=el.querySelector('.drawnlabel'); if(!t){t=document.createElement('p');t.className='drawnlabel';el.prepend(t);}
+    t.textContent='你抽到的是'+(rev?'「逆位」':'「正位」')+'。先別看解說，看著圖想一想它在說什麼。';
+  });
+})();
+</script><script>
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}
+</script></body></html>
