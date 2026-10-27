@@ -36,6 +36,7 @@ icon(192).save(f"{OUT}/icons/icon-192.png", optimize=True)
 icon(180, 0.74).save(f"{OUT}/icons/apple-touch-icon.png", optimize=True)
 
 subprocess.run([sys.executable, "-I", f"{HERE}/build.py", f"{OUT}/index.html", "pwa"], check=True)
+subprocess.run([sys.executable, "-I", f"{HERE}/build_scroll.py", f"{OUT}/scroll.html"], check=True)
 
 manifest = {
     "name": "塔羅講義・1909 原版偉特牌",
@@ -47,6 +48,10 @@ manifest = {
     "display": "standalone",
     "background_color": "#f6f1e7",
     "theme_color": "#f6f1e7",
+    "shortcuts": [
+        {"name": "滑牌", "short_name": "滑牌", "description": "一張一張往下滑，隨機、無限循環", "url": "scroll.html",
+         "icons": [{"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"}]}
+    ],
     "icons": [
         {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
         {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
@@ -55,7 +60,7 @@ manifest = {
 }
 json.dump(manifest, open(f"{OUT}/manifest.webmanifest", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
-files = ["./", "index.html", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"] \
+files = ["./", "index.html", "scroll.html", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"] \
       + [f"cards/{i:02d}.jpg" for i in range(78)] + [f"thumbs/{i:02d}.jpg" for i in range(78)]
 h = hashlib.sha256()
 for f in files[1:]: h.update(open(f"{OUT}/{f}", "rb").read())
@@ -84,6 +89,9 @@ open(f"{OUT}/README.md", "w", encoding="utf-8").write(
 
 - 牌面：Pamela Colman Smith 繪，1909「Roses & Lilies」版，取自 Wikimedia Commons，公有領域。
 - Waite 原意：A. E. Waite《The Pictorial Key to the Tarot》(1910)，取自 Wikisource。
+
+## 滑牌
+`scroll.html`：一次一張牌、全螢幕，往下滑就換下一張，隨機順序、無限循環。講義頂端的「滑牌」按鈕可以進入；Android 長按 App 圖示也有捷徑。
 
 ## 安裝到手機
 - iPhone：用 Safari 打開網址 → 分享 → 加入主畫面
