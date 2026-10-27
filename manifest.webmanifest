@@ -21,6 +21,19 @@
           "type": "image/png"
         }
       ]
+    },
+    {
+      "name": "安靜滑牌",
+      "short_name": "安靜滑牌",
+      "description": "只有牌面，連續捲動",
+      "url": "scroll.html?mode=quiet",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     }
   ],
   "icons": [
