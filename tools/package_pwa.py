@@ -62,15 +62,16 @@ json.dump(manifest, open(f"{OUT}/manifest.webmanifest", "w", encoding="utf-8"), 
 
 files = ["./", "index.html", "scroll.html", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"] \
       + [f"cards/{i:02d}.jpg" for i in range(78)] + [f"thumbs/{i:02d}.jpg" for i in range(78)]
-h = hashlib.sha256()
+h = hashlib.sha256(b"sw-v2")  # 改快取邏輯時調整這個字串
 for f in files[1:]: h.update(open(f"{OUT}/{f}", "rb").read())
 version = h.hexdigest()[:10]   # 內容一變，快取版本就跟著變，手機會自動更新
 
 sw = f"""// 離線快取：第一次開啟時把整份講義存進手機，之後沒網路也能看
+// 更新時一律向伺服器重新下載（cache: 'reload'），避免存到瀏覽器裡的舊版
 const CACHE = 'tarot-{version}';
 const FILES = {json.dumps(files)};
 self.addEventListener('install', e => {{
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
+  e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES.map(u => new Request(u, {{cache: 'reload'}})))).then(() => self.skipWaiting()));
 }});
 self.addEventListener('activate', e => {{
   e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim()));
